@@ -1,4 +1,4 @@
-/* Kaya Alp — prototype interactions v0.2 (vanilla, no dependencies) */
+/* Kaya Alp — prototype interactions v0.3 (vanilla, no dependencies) */
 (function () {
   'use strict';
   const $ = (s, c = document) => c.querySelector(s);
@@ -23,6 +23,17 @@
     item.addEventListener('keydown', (e) => { if (e.key === 'Escape') { close(); btn.focus(); } });
     document.addEventListener('click', (e) => { if (!item.contains(e.target)) close(); });
     item.addEventListener('focusout', (e) => { if (!item.contains(e.relatedTarget)) close(); });
+  });
+
+  /* ---------- language popover (mobile header) ---------- */
+  $$('.lang-menu').forEach((menu) => {
+    const btn = $('.lang-menu__btn', menu); const list = $('.lang-menu__list', menu);
+    if (!btn || !list) return;
+    const set = (open) => { list.hidden = !open; btn.setAttribute('aria-expanded', String(open)); };
+    btn.addEventListener('click', (e) => { e.stopPropagation(); set(list.hidden); });
+    document.addEventListener('click', (e) => { if (!menu.contains(e.target)) set(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') set(false); });
+    $$('a', list).forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); $$('a', list).forEach((x) => x.removeAttribute('aria-current')); a.setAttribute('aria-current', 'true'); btn.firstChild.textContent = (a.getAttribute('hreflang') || 'tr').toUpperCase() + ' '; set(false); }));
   });
 
   /* ---------- mobile sheet menu ---------- */
@@ -80,20 +91,6 @@
     revealVisible();
   } else {
     revealEls.forEach((el) => el.classList.add('in'));
-  }
-
-  /* ---------- counters ---------- */
-  const counters = $$('[data-count]');
-  if (counters.length && 'IntersectionObserver' in window && !reduceMotion) {
-    const cio = new IntersectionObserver((entries) => {
-      entries.forEach((en) => {
-        if (!en.isIntersecting) return;
-        const el = en.target; const target = +el.dataset.count; const t0 = performance.now(); const dur = 1200;
-        const tick = (t) => { const p = Math.min(1, (t - t0) / dur); const e = 1 - Math.pow(1 - p, 3); el.textContent = Math.round(target * e); if (p < 1) requestAnimationFrame(tick); };
-        requestAnimationFrame(tick); cio.unobserve(el);
-      });
-    }, { threshold: 0.6 });
-    counters.forEach((c) => cio.observe(c));
   }
 
   /* ---------- hero parallax (desktop, fine pointer only) ---------- */
