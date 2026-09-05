@@ -633,6 +633,16 @@ p { text-wrap: pretty; }
 }
 
 /* ------------------------------------------------------------ responsive */
+.topbar a, .topbar__item, .nav__link { white-space: nowrap; }
+@media (max-width: 1240px) {
+  .logo img { height: 40px; }
+  .nav__link { padding: .5rem .6rem; font-size: .88rem; }
+  .navbar__inner { gap: 1rem; }
+  .topbar { font-size: .76rem; }
+  .topbar__group { gap: .9rem; }
+  .topbar__group--right a:nth-child(2) { display: none; }
+  .navbar__actions .btn { min-height: 44px; padding: 0 1rem; font-size: .88rem; }
+}
 @media (max-width: 1180px) {
   .mega__panel { grid-template-columns: repeat(4, 1fr); }
   .mega__feature { display: none; }
