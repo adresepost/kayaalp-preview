@@ -23,8 +23,8 @@
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500..800&family=Quicksand:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="../assets/css/style.css?v=3">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Libre+Franklin:wght@500;600;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css?v=6">
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <script type="application/ld+json">
   {
@@ -133,6 +133,8 @@
     <symbol id="i-youtube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 8.2a3 3 0 0 0-2.1-2.1C18.6 5.6 12 5.6 12 5.6s-6.6 0-8.4.5A3 3 0 0 0 1.5 8.2 31 31 0 0 0 1 12a31 31 0 0 0 .5 3.8 3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23 12a31 31 0 0 0-.5-3.8z"/><path d="m10 15 5-3-5-3z"/></symbol>
     <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-chevron-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
   </defs>
 </svg>
 <!-- @/shared:sprite -->
@@ -147,6 +149,7 @@
         <span class="topbar__item"><span class="status-dot" data-open-dot></span><span class="topbar__hours-text" data-open-text>Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00</span></span>
       </div>
       <div class="topbar__group topbar__group--right">
+        <span class="topbar__social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a></span>
         <a href="../index.html#randevu"><svg><use href="#i-scan"/></svg>Röntgen Gönder</a>
         <a href="../index.html#uluslararasi"><svg><use href="#i-globe"/></svg>International Patients</a>
         <nav class="lang" aria-label="Dil seçimi"><a href="#" aria-current="true" hreflang="tr">TR</a><a href="#" hreflang="en">EN</a><a href="#" hreflang="de">DE</a><a href="#" hreflang="ar">AR</a></nav>
@@ -163,12 +166,13 @@
 
       <nav class="nav" aria-label="Ana menü">
         <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="../index.html#hakkimizda">Hakkımızda</a></li>
           <li class="nav__item has-mega">
             <button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-tedaviler">Tedaviler <svg><use href="#i-chevron"/></svg></button>
             <div class="mega" id="mega-tedaviler">
               <div class="mega__panel">
                 <div class="mega__col">
-                  <div class="mega__head"><span><svg><use href="#i-implant"/></svg></span><div><h4>İmplant</h4><small>Eksik diş çözümleri</small></div></div>
+                  <div class="mega__head"><span><svg><use href="#i-implant"/></svg></span><div><h4>İmplant</h4><small>Eksik diş tedavileri</small></div></div>
                   <a href="implant.html">Dental İmplant <svg><use href="#i-arrow"/></svg></a>
                   <a href="implant.html#all-on-4">All-on-4 / All-on-6 <svg><use href="#i-arrow"/></svg></a>
                   <a href="implant.html#ayni-gun">Aynı Gün İmplant <svg><use href="#i-arrow"/></svg></a>
@@ -211,7 +215,7 @@
                   <a href="../index.html#randevu"><svg><use href="#i-scan"/></svg>Röntgen gönder</a>
                   <a href="https://wa.me/905000000000"><svg><use href="#i-whatsapp"/></svg>WhatsApp'tan sor</a>
                   <span class="spacer"></span>
-                  <span style="color:var(--ink-3)">Uygun tedaviye muayene sonrasında hekiminizle birlikte karar verirsiniz.</span>
+                  <span class="muted">Uygun tedaviye muayene sonrasında hekiminizle birlikte karar verirsiniz.</span>
                 </div>
               </div>
             </div>
@@ -256,6 +260,7 @@
       <a href="tel:+902820000000"><span><svg><use href="#i-phone"/></svg></span>Ara</a>
     </div>
     <nav class="sheet__nav" aria-label="Mobil menü">
+      <a class="sheet__item" href="../index.html#hakkimizda" data-sheet-close><span class="ico"><svg><use href="#i-info"/></svg></span>Hakkımızda <svg><use href="#i-chevron-r"/></svg></a>
       <details>
         <summary class="sheet__item"><span class="ico"><svg><use href="#i-grid"/></svg></span>Tedaviler <svg><use href="#i-chevron"/></svg></summary>
         <div class="sheet__sub">
@@ -273,7 +278,7 @@
       <a class="sheet__item" href="../index.html#klinik" data-sheet-close><span class="ico"><svg><use href="#i-hospital"/></svg></span>Kliniğimiz <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="../index.html#uluslararasi" data-sheet-close><span class="ico"><svg><use href="#i-globe"/></svg></span>Uluslararası Hastalar <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="../index.html#sss" data-sheet-close><span class="ico"><svg><use href="#i-file"/></svg></span>Hasta Rehberi &amp; SSS <svg><use href="#i-chevron-r"/></svg></a>
-      <a class="sheet__item" href="../index.html#blog" data-sheet-close><span class="ico"><svg><use href="#i-heart"/></svg></span>Sağlık Köşesi <svg><use href="#i-chevron-r"/></svg></a>
+      <a class="sheet__item" href="../index.html#blog" data-sheet-close><span class="ico"><svg><use href="#i-heart"/></svg></span>Blog <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="../index.html#iletisim" data-sheet-close><span class="ico"><svg><use href="#i-pin"/></svg></span>İletişim <svg><use href="#i-chevron-r"/></svg></a>
     </nav>
     <div class="sheet__foot">
@@ -456,15 +461,25 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="../index.html#top"><img src="../assets/img/brand/logo-horizontal-white.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302"></a>
-        <p>Ağız ve diş sağlığı alanında, ilgili uzmanlık dallarındaki hekimlerle hizmet veren özel poliklinik.</p>
-        <div class="footer__badges"><span class="chip chip--dark"><svg><use href="#i-shield"/></svg>Sağlık Bakanlığı Ruhsatlı</span><span class="chip chip--dark">TDB Üyesi Hekimler</span><span class="chip chip--dark">Uluslararası Sağlık Turizmi Yetki Belgesi</span></div>
-        <div class="social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a></div>
+      <div><h4>Tedaviler</h4><ul><li><a href="implant.html">Dental İmplant</a></li><li><a href="#">Gülüş Tasarımı</a></li><li><a href="#">Şeffaf Plak</a></li><li><a href="#">Çocuk Diş Hekimliği</a></li><li><a href="#">Kanal Tedavisi</a></li><li><a href="#">Ağız, Diş ve Çene Cerrahisi</a></li><li><a href="#">Protez Tedavileri</a></li><li><a href="#">Diş Eti Tedavileri</a></li></ul></div>
+      <div><h4>Kurumsal</h4><ul><li><a href="../index.html#hakkimizda">Hakkımızda</a></li><li><a href="../index.html#hekimler">Hekimlerimiz</a></li><li><a href="../index.html#klinik">Kliniğimiz</a></li><li><a href="../index.html#uluslararasi">Uluslararası Hastalar</a></li><li><a href="#">Kalite Politikası</a></li><li><a href="#">Kariyer</a></li><li><a href="../index.html#blog">Blog</a></li></ul></div>
+      <div><h4>Hasta Rehberi</h4><ul><li><a href="../index.html#sss">Sıkça Sorulan Sorular</a></li><li><a href="../index.html#bilgi">Tedavi Bilgilendirme Yazıları</a></li><li><a href="#">Hasta Hakları ve Sorumlulukları</a></li><li><a href="#">KVKK Aydınlatma Metni</a></li><li><a href="#">Açık Rıza Metni</a></li><li><a href="#">Çerez Politikası</a></li><li><a href="../index.html#iletisim">İletişim</a></li></ul></div>
+      <div><h4>İletişim</h4><ul class="footer__contact">
+        <li><a href="https://maps.google.com/?q=Kaya+Alp+Dis" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span>Örnek Cad. No:1, Kat 2<br>Çorlu / Tekirdağ</span></a></li>
+        <li><a href="tel:+902820000000"><svg><use href="#i-phone"/></svg><span class="tabular">0 (282) 000 00 00</span></a></li>
+        <li><a href="https://wa.me/905000000000" target="_blank" rel="noopener"><svg><use href="#i-whatsapp"/></svg><span class="tabular">0 (500) 000 00 00</span></a></li>
+        <li><a href="mailto:info@kayaalpdent.com"><svg><use href="#i-mail"/></svg><span>info@kayaalpdent.com</span></a></li>
+        <li><a href="../index.html#klinik"><svg><use href="#i-clock"/></svg><span>Pzt–Cum 09:00–19:00<br>Cmt 09:00–17:00</span></a></li>
+      </ul></div>
+    </div>
+    <div class="footer__brandrow">
+      <a href="../index.html#top"><img src="../assets/img/brand/logo-horizontal-white.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302"></a>
+      <div class="footer__certs" aria-label="Ruhsat ve belgeler">
+        <div class="cert"><svg><use href="#i-shield"/></svg><strong>Sağlık Bakanlığı Ruhsatı</strong><small>Kurum Kodu: ••••••</small></div>
+        <div class="cert"><svg><use href="#i-globe"/></svg><strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong><small>No: ••••••</small></div>
+        <div class="cert"><svg><use href="#i-clipboard"/></svg><strong>Türk Diş Hekimleri Birliği</strong><small>Üye hekimler</small></div>
       </div>
-      <div><h4>Tedaviler</h4><ul><li><a href="implant.html">Dental İmplant</a></li><li><a href="#">Gülüş Tasarımı</a></li><li><a href="#">Şeffaf Plak</a></li><li><a href="#">Çocuk Diş Hekimliği</a></li><li><a href="#">Kanal Tedavisi</a></li><li><a href="#">Ağız, Diş ve Çene Cerrahisi</a></li><li><a href="#">Protez Tedavileri</a></li></ul></div>
-      <div><h4>Kurumsal</h4><ul><li><a href="../index.html#neden">Çalışma İlkelerimiz</a></li><li><a href="../index.html#hekimler">Hekimlerimiz</a></li><li><a href="../index.html#klinik">Kliniğimiz</a></li><li><a href="#">Kalite Politikası</a></li><li><a href="#">Kariyer</a></li><li><a href="../index.html#blog">Blog</a></li></ul></div>
-      <div><h4>Hasta Rehberi</h4><ul><li><a href="../index.html#sss">Sıkça Sorulan Sorular</a></li><li><a href="#">Hasta Hakları ve Sorumlulukları</a></li><li><a href="#">KVKK Aydınlatma Metni</a></li><li><a href="#">Açık Rıza Metni</a></li><li><a href="#">Çerez Politikası</a></li><li><a href="../index.html#iletisim">İletişim</a></li></ul></div>
+      <div class="social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a></div>
     </div>
     <div class="footer__legal">
       <p><strong>Yasal bilgilendirme.</strong> Bu web sitesindeki bilgiler yalnızca genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez, herhangi bir tedavi sonucu için vaat veya garanti içermez. Tedavi süreleri ve sonuçları kişiye göre farklılık gösterir. Sitede kullanılan kişi görselleri temsilidir; hasta görseli değildir. İçerikler, 29 Temmuz 2023 tarihli “Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik” hükümlerine uygun olarak hazırlanmıştır.</p>
@@ -490,6 +505,6 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <!-- @/shared:footer -->
 
-<script src="../assets/js/main.js?v=3" defer></script>
+<script src="../assets/js/main.js?v=6" defer></script>
 </body>
 </html>

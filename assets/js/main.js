@@ -1,10 +1,10 @@
-/* Kaya Alp — prototype interactions v0.3 (vanilla, no dependencies) */
+/* Kaya Alp — prototype interactions v0.6 (vanilla, no dependencies) */
 (function () {
   'use strict';
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const scrollBehavior = reduceMotion ? 'auto' : 'smooth';
 
   /* ---------- header: scrolled state ---------- */
   const onScroll = () => document.body.classList.toggle('is-scrolled', window.scrollY > 12);
@@ -63,9 +63,68 @@
     text.textContent = (open ? 'Şu an açık' : 'Şu an kapalı') + ' · Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00';
   })();
 
+  /* ---------- hero slider (fade, auto-advance, dots, swipe, keyboard) ---------- */
+  const hero = $('[data-slider]');
+  if (hero) {
+    const slides = $$('.slide', hero); const dots = $('.hero__dots', hero); let i = 0; let timer = null;
+    const show = (n) => {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, k) => { s.classList.toggle('is-active', k === i); s.setAttribute('aria-hidden', String(k !== i)); });
+      if (dots) $$('button', dots).forEach((b, k) => { b.classList.toggle('is-active', k === i); b.setAttribute('aria-selected', String(k === i)); });
+    };
+    const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+    const start = () => { stop(); if (reduceMotion || slides.length < 2) return; timer = setInterval(() => show(i + 1), 6500); };
+    if (dots) slides.forEach((_, k) => {
+      const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-label', 'Slayt ' + (k + 1));
+      b.addEventListener('click', () => { show(k); start(); }); dots.appendChild(b);
+    });
+    hero.addEventListener('mouseenter', stop); hero.addEventListener('mouseleave', start);
+    hero.addEventListener('focusin', stop); hero.addEventListener('focusout', start);
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+    let x0 = null;
+    hero.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    hero.addEventListener('touchend', (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) { show(dx < 0 ? i + 1 : i - 1); start(); } x0 = null; });
+    hero.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight') { show(i + 1); start(); } if (e.key === 'ArrowLeft') { show(i - 1); start(); } });
+    show(0); start();
+  }
+
+  /* ---------- scroll-snap carousels (arrows + dots) ---------- */
+  $$('[data-carousel]').forEach((wrap) => {
+    const track = $('.carousel__track', wrap); if (!track) return;
+    const id = wrap.dataset.carousel;
+    const step = () => { const first = track.firstElementChild; const gap = parseFloat(getComputedStyle(track).columnGap) || 24; return first ? first.getBoundingClientRect().width + gap : track.clientWidth; };
+    const maxLeft = () => track.scrollWidth - track.clientWidth;
+    const go = (dir) => {
+      let left = track.scrollLeft + dir * step();
+      if (dir > 0 && track.scrollLeft >= maxLeft() - 2) left = 0;
+      if (dir < 0 && track.scrollLeft <= 2) left = maxLeft();
+      track.scrollTo({ left, behavior: scrollBehavior });
+    };
+    $$('[data-prev="' + id + '"]').forEach((b) => b.addEventListener('click', () => go(-1)));
+    $$('[data-next="' + id + '"]').forEach((b) => b.addEventListener('click', () => go(1)));
+    const dots = $('[data-dots="' + id + '"]');
+    if (dots) {
+      const sync = () => { const w = track.clientWidth || 1; const k = Math.round(track.scrollLeft / w); $$('button', dots).forEach((b, n) => b.classList.toggle('is-active', n === k)); };
+      const build = () => {
+        const pages = Math.max(1, Math.ceil((track.scrollWidth - 4) / (track.clientWidth || 1)));
+        dots.innerHTML = '';
+        if (pages < 2) return;
+        for (let n = 0; n < pages; n++) {
+          const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', 'Sayfa ' + (n + 1));
+          b.addEventListener('click', () => track.scrollTo({ left: Math.min(n * track.clientWidth, maxLeft()), behavior: scrollBehavior }));
+          dots.appendChild(b);
+        }
+        sync();
+      };
+      build();
+      let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(build, 150); });
+      track.addEventListener('scroll', sync, { passive: true });
+    }
+  });
+
   /* ---------- accordion (single open per group) ---------- */
   $$('.acc').forEach((acc) => {
-    const btn = $('.acc__btn', acc);
+    const btn = $('.acc__btn', acc); if (!btn) return;
     btn.addEventListener('click', () => {
       const isOpen = acc.classList.contains('is-open');
       $$('.acc.is-open', acc.parentElement).forEach((o) => { if (o !== acc) { o.classList.remove('is-open'); $('.acc__btn', o).setAttribute('aria-expanded', 'false'); } });
@@ -91,19 +150,6 @@
     revealVisible();
   } else {
     revealEls.forEach((el) => el.classList.add('in'));
-  }
-
-  /* ---------- hero parallax (desktop, fine pointer only) ---------- */
-  const stage = $('.hero__stage');
-  if (stage && finePointer && !reduceMotion) {
-    const img = $('.hero__img img', stage);
-    const cards = $$('.float-card', stage);
-    stage.addEventListener('mousemove', (e) => {
-      const r = stage.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5; const y = (e.clientY - r.top) / r.height - .5;
-      if (img) img.style.transform = `scale(1.06) translate(${x * -10}px, ${y * -10}px)`;
-      cards.forEach((c, i) => { c.style.marginLeft = `${x * (i ? -8 : 8)}px`; c.style.marginTop = `${y * (i ? -6 : 6)}px`; });
-    });
-    stage.addEventListener('mouseleave', () => { if (img) img.style.transform = ''; cards.forEach((c) => { c.style.marginLeft = ''; c.style.marginTop = ''; }); });
   }
 
   /* ---------- bottom tab bar: active state ---------- */
@@ -148,7 +194,7 @@
       if (!allOk) { const first = $('.has-error input, .has-error select', form); first && first.focus(); showToast('Lütfen işaretli alanları kontrol edin.'); return; }
       if (!consentOk) { showToast('Devam etmek için KVKK ve açık rıza onaylarını işaretleyin.'); consents.find((c) => !c.checked).focus(); return; }
       form.classList.add('is-sent');
-      form.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      form.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
       showToast('Randevu talebiniz iletildi.');
     });
   }
@@ -201,7 +247,7 @@
       e.preventDefault();
       const header = $('.site-header'); const off = header ? header.offsetHeight + 16 : 0;
       const top = target.getBoundingClientRect().top + window.scrollY - off;
-      window.scrollTo({ top, behavior: reduceMotion ? 'auto' : 'smooth' });
+      window.scrollTo({ top, behavior: scrollBehavior });
       try { history.replaceState(null, '', id); } catch (err) { /* sandboxed contexts may refuse */ }
     });
   });

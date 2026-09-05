@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="ar" href="https://kayaalpdent.com/ar/">
   <link rel="alternate" hreflang="x-default" href="https://kayaalpdent.com/">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="theme-color" content="#18355C">
+  <meta name="theme-color" content="#0C0F2F">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="Kaya Alp Ağız ve Diş Sağlığı Polikliniği">
@@ -24,10 +24,10 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500..800&family=Quicksand:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Libre+Franklin:wght@500;600;800&display=swap">
   <link rel="preload" as="image" href="assets/img/hero-bg.webp" type="image/webp" media="(min-width: 721px)">
   <link rel="preload" as="image" href="assets/img/hero-person.webp" type="image/webp">
-  <link rel="stylesheet" href="assets/css/style.css?v=3">
+  <link rel="stylesheet" href="assets/css/style.css?v=6">
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <script type="application/ld+json">
   {
@@ -131,6 +131,8 @@
     <symbol id="i-youtube" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.5 8.2a3 3 0 0 0-2.1-2.1C18.6 5.6 12 5.6 12 5.6s-6.6 0-8.4.5A3 3 0 0 0 1.5 8.2 31 31 0 0 0 1 12a31 31 0 0 0 .5 3.8 3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23 12a31 31 0 0 0-.5-3.8z"/><path d="m10 15 5-3-5-3z"/></symbol>
     <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
     <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-chevron-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
   </defs>
 </svg>
 <!-- @/shared:sprite -->
@@ -145,6 +147,7 @@
         <span class="topbar__item"><span class="status-dot" data-open-dot></span><span class="topbar__hours-text" data-open-text>Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00</span></span>
       </div>
       <div class="topbar__group topbar__group--right">
+        <span class="topbar__social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a></span>
         <a href="#randevu"><svg><use href="#i-scan"/></svg>Röntgen Gönder</a>
         <a href="#uluslararasi"><svg><use href="#i-globe"/></svg>International Patients</a>
         <nav class="lang" aria-label="Dil seçimi"><a href="#" aria-current="true" hreflang="tr">TR</a><a href="#" hreflang="en">EN</a><a href="#" hreflang="de">DE</a><a href="#" hreflang="ar">AR</a></nav>
@@ -161,12 +164,13 @@
 
       <nav class="nav" aria-label="Ana menü">
         <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#hakkimizda">Hakkımızda</a></li>
           <li class="nav__item has-mega">
             <button class="nav__link" type="button" aria-expanded="false" aria-controls="mega-tedaviler">Tedaviler <svg><use href="#i-chevron"/></svg></button>
             <div class="mega" id="mega-tedaviler">
               <div class="mega__panel">
                 <div class="mega__col">
-                  <div class="mega__head"><span><svg><use href="#i-implant"/></svg></span><div><h4>İmplant</h4><small>Eksik diş çözümleri</small></div></div>
+                  <div class="mega__head"><span><svg><use href="#i-implant"/></svg></span><div><h4>İmplant</h4><small>Eksik diş tedavileri</small></div></div>
                   <a href="tedaviler/implant.html">Dental İmplant <svg><use href="#i-arrow"/></svg></a>
                   <a href="tedaviler/implant.html#all-on-4">All-on-4 / All-on-6 <svg><use href="#i-arrow"/></svg></a>
                   <a href="tedaviler/implant.html#ayni-gun">Aynı Gün İmplant <svg><use href="#i-arrow"/></svg></a>
@@ -209,7 +213,7 @@
                   <a href="#randevu"><svg><use href="#i-scan"/></svg>Röntgen gönder</a>
                   <a href="https://wa.me/905000000000"><svg><use href="#i-whatsapp"/></svg>WhatsApp'tan sor</a>
                   <span class="spacer"></span>
-                  <span style="color:var(--ink-3)">Uygun tedaviye muayene sonrasında hekiminizle birlikte karar verirsiniz.</span>
+                  <span class="muted">Uygun tedaviye muayene sonrasında hekiminizle birlikte karar verirsiniz.</span>
                 </div>
               </div>
             </div>
@@ -254,6 +258,7 @@
       <a href="tel:+902820000000"><span><svg><use href="#i-phone"/></svg></span>Ara</a>
     </div>
     <nav class="sheet__nav" aria-label="Mobil menü">
+      <a class="sheet__item" href="#hakkimizda" data-sheet-close><span class="ico"><svg><use href="#i-info"/></svg></span>Hakkımızda <svg><use href="#i-chevron-r"/></svg></a>
       <details>
         <summary class="sheet__item"><span class="ico"><svg><use href="#i-grid"/></svg></span>Tedaviler <svg><use href="#i-chevron"/></svg></summary>
         <div class="sheet__sub">
@@ -271,7 +276,7 @@
       <a class="sheet__item" href="#klinik" data-sheet-close><span class="ico"><svg><use href="#i-hospital"/></svg></span>Kliniğimiz <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="#uluslararasi" data-sheet-close><span class="ico"><svg><use href="#i-globe"/></svg></span>Uluslararası Hastalar <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="#sss" data-sheet-close><span class="ico"><svg><use href="#i-file"/></svg></span>Hasta Rehberi &amp; SSS <svg><use href="#i-chevron-r"/></svg></a>
-      <a class="sheet__item" href="#blog" data-sheet-close><span class="ico"><svg><use href="#i-heart"/></svg></span>Sağlık Köşesi <svg><use href="#i-chevron-r"/></svg></a>
+      <a class="sheet__item" href="#blog" data-sheet-close><span class="ico"><svg><use href="#i-heart"/></svg></span>Blog <svg><use href="#i-chevron-r"/></svg></a>
       <a class="sheet__item" href="#iletisim" data-sheet-close><span class="ico"><svg><use href="#i-pin"/></svg></span>İletişim <svg><use href="#i-chevron-r"/></svg></a>
     </nav>
     <div class="sheet__foot">
@@ -284,351 +289,351 @@
 
 <main id="icerik">
 
-<!-- ================= HERO ================= -->
-<section class="hero" aria-labelledby="hero-title">
-  <picture class="hero__bg" aria-hidden="true">
-    <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.webp" type="image/webp">
-    <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.jpg">
-    <source srcset="assets/img/hero-bg.webp" type="image/webp">
-    <img src="assets/img/hero-bg.jpg" alt="" width="2400" height="1200" fetchpriority="high">
-  </picture>
-  <div class="container hero__inner">
-    <div class="hero__content">
-      <span class="eyebrow" data-hero="1"><svg><use href="#i-spark"/></svg>Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span>
-      <h1 id="hero-title" data-hero="2">Ağız ve diş sağlığında <em>bilgi</em> ve tedavi.</h1>
-      <p class="lead" data-hero="3">Kliniğimizde uygulanan tedaviler, hekimlerimiz ve çalışma saatlerimiz hakkında bilgi alabilir; randevu talebinizi iletebilirsiniz.</p>
-      <div class="hero__cta" data-hero="4">
-        <a class="btn btn--primary btn--lg" href="#randevu"><svg><use href="#i-calendar"/></svg>Online Randevu</a>
-        <a class="btn btn--outline btn--lg" href="https://wa.me/905000000000" target="_blank" rel="noopener"><svg><use href="#i-whatsapp"/></svg>WhatsApp'tan Yazın</a>
+<!-- ================= HERO SLIDER ================= -->
+<section class="hero" id="hero" data-slider aria-roledescription="carousel" aria-label="Tanıtım slaytları" tabindex="-1">
+  <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 / 3">
+    <picture class="slide__bg" aria-hidden="true">
+      <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.webp" type="image/webp">
+      <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.jpg">
+      <source srcset="assets/img/hero-bg.webp" type="image/webp">
+      <img src="assets/img/hero-bg.jpg" alt="" width="2400" height="1200" fetchpriority="high">
+    </picture>
+    <picture>
+      <source srcset="assets/img/hero-person.webp" type="image/webp">
+      <img class="slide__person" src="assets/img/hero-person.png" alt="Temsili görsel: gülümseyen bir kişi" width="1519" height="1300" fetchpriority="high">
+    </picture>
+    <div class="slide__text">
+      <h1 id="hero-title"><span class="slide__l1">Özel Kaya Alp</span><span class="slide__l2">Ağız ve Diş</span><span class="slide__l3">Sağlığı Polikliniği</span></h1>
+      <div class="slide__cta"><a class="btn btn--primary" href="#randevu">Online Randevu</a><a class="btn btn--ghost-light" href="#tedaviler">Tedavilerimiz</a></div>
+    </div>
+  </div>
+
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="2 / 3" aria-hidden="true">
+    <picture class="slide__bg" aria-hidden="true">
+      <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.webp" type="image/webp">
+      <source srcset="assets/img/hero-bg.webp" type="image/webp">
+      <img src="assets/img/hero-bg.jpg" alt="" width="2400" height="1200" loading="lazy">
+    </picture>
+    <picture>
+      <source srcset="assets/img/hero-person-2.webp" type="image/webp">
+      <img class="slide__person" src="assets/img/hero-person-2.png" alt="Temsili görsel: diş hekimi" width="871" height="1300" loading="lazy">
+    </picture>
+    <div class="slide__text">
+      <p class="slide__title"><span class="slide__l1">Hekimlerimizden</span><span class="slide__l2">Bilgi</span><span class="slide__l3 slide__l3--sm">Tedavi bilgilendirme yazıları ve videoları</span></p>
+      <div class="slide__cta"><a class="btn btn--primary" href="#bilgi">Bilgi Sayfaları</a><a class="btn btn--ghost-light" href="#hekimler">Hekimlerimiz</a></div>
+    </div>
+  </div>
+
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="3 / 3" aria-hidden="true">
+    <picture class="slide__bg" aria-hidden="true">
+      <source srcset="assets/img/clinic-chair-wide.webp" type="image/webp">
+      <img src="assets/img/clinic-chair-wide.jpg" alt="" width="1200" height="750" loading="lazy">
+    </picture>
+    <span class="slide__shade" aria-hidden="true"></span>
+    <div class="slide__text">
+      <p class="slide__title"><span class="slide__l1">International</span><span class="slide__l2">Patients</span><span class="slide__l3 slide__l3--sm">EN · DE · AR hasta koordinasyonu</span></p>
+      <div class="slide__cta"><a class="btn btn--primary" href="#uluslararasi">Bilgi Alın</a><a class="btn btn--ghost-light" href="#randevu">Röntgen Gönder</a></div>
+    </div>
+  </div>
+
+  <div class="hero__dots" role="tablist" aria-label="Slayt seçimi"></div>
+  <span class="hero__note" aria-hidden="true">Temsili görseller</span>
+</section>
+
+<!-- ================= BRAND TILES ================= -->
+<section aria-label="Kaya Alp hakkında kısa bilgi">
+  <div class="container tiles">
+    <div class="tile reveal">
+      <span class="tile__mark"><svg><use href="#i-tooth"/></svg></span>
+      <span class="tile__brand">Kaya Alp<span>Tedaviler</span></span>
+      <p>Kliniğimizde uygulanan ağız ve diş sağlığı tedavileri; ilgili alandaki hekimlerimiz tarafından planlanır ve uygulanır.</p>
+      <a class="btn btn--primary" href="#tedaviler">Detaylı Bilgi</a>
+    </div>
+    <div class="tile reveal" data-delay="1">
+      <span class="tile__mark"><svg><use href="#i-file"/></svg></span>
+      <span class="tile__brand">Kaya Alp<span>Bilgilendirme</span></span>
+      <p>Her tedavi için nedir, kimlere uygulanır, aşamaları ve olası riskleri; hekimlerimizin hazırladığı bilgi yazıları ve anlatım videoları.</p>
+      <a class="btn btn--primary" href="#bilgi">Detaylı Bilgi</a>
+    </div>
+    <div class="tile reveal" data-delay="2">
+      <span class="tile__mark"><svg><use href="#i-globe"/></svg></span>
+      <span class="tile__brand">Kaya Alp<span>International</span></span>
+      <p>Yurt dışından gelen hastalarımız için İngilizce, Almanca ve Arapça hasta koordinasyonu; online ön değerlendirme ve yazılı plan.</p>
+      <a class="btn btn--primary" href="#uluslararasi">Detaylı Bilgi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TREATMENTS CAROUSEL ================= -->
+<section class="sec" id="tedaviler" aria-labelledby="tedaviler-title" style="padding-top:24px">
+  <div class="container">
+    <div class="sec__head reveal">
+      <div><span class="eyebrow">Kaya Alp</span><h2 id="tedaviler-title">Tedavilerimiz</h2></div>
+      <div class="arrows"><button class="arrow" type="button" data-prev="tx" aria-label="Önceki tedaviler"><svg><use href="#i-chevron-l"/></svg></button><button class="arrow" type="button" data-next="tx" aria-label="Sonraki tedaviler"><svg><use href="#i-chevron-r"/></svg></button></div>
+    </div>
+    <div class="carousel reveal" data-carousel="tx">
+      <div class="carousel__track">
+        <a class="tcard" href="tedaviler/implant.html">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-implant.webp" type="image/webp"><img src="assets/img/tx-implant.jpg" alt="Dental implant modeli" loading="lazy" width="900" height="675"></picture></div>
+          <h3>İmplant Tedavileri</h3><p>Eksik dişlerin implant destekli sabit veya hareketli protezlerle yeniden yapılandırılması.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/smile-closeup.webp" type="image/webp"><img src="assets/img/smile-closeup.jpg" alt="Doğal görünümlü dişler" loading="lazy" width="1000" height="750"></picture></div>
+          <h3>Estetik Diş Hekimliği</h3><p>Lamine, zirkonyum ve E-max restorasyonlar; hekim kontrolünde diş beyazlatma.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-aligner.webp" type="image/webp"><img src="assets/img/tx-aligner.jpg" alt="Şeffaf plak ve saklama kutusu" loading="lazy" width="900" height="675"></picture></div>
+          <h3>Ortodonti &amp; Şeffaf Plak</h3><p>Yetişkin ve çocuklarda şeffaf plak ve braket seçenekleri; dijital planlama ile takip.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-kids.webp" type="image/webp"><img src="assets/img/tx-kids.jpg" alt="Çocuk diş hekimi küçük hastasının dişlerini kontrol ediyor" loading="lazy" width="900" height="675"></picture></div>
+          <h3>Çocuk Diş Hekimliği</h3><p>Koruyucu uygulamalar ve süt dişi tedavileri; gerektiğinde sedasyon desteği.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-exam.webp" type="image/webp"><img src="assets/img/tx-exam.jpg" alt="Diş hekimi ayna ve sond ile muayene yapıyor" loading="lazy" width="900" height="675"></picture></div>
+          <h3>Kanal Tedavisi</h3><p>Kök kanal tedavisi; tekrarlayan kanal tedavileri ve fiber post uygulamaları.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-surgery.webp" type="image/webp"><img src="assets/img/tx-surgery.jpg" alt="Cerrahi ekip steril ortamda işlem uyguluyor" loading="lazy" width="900" height="675"></picture></div>
+          <h3>Ağız, Diş ve Çene Cerrahisi</h3><p>Gömülü diş çekimi, kist operasyonları, sinüs lifting ve kemik greftleme.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/tx-scanner.webp" type="image/webp"><img src="assets/img/tx-scanner.jpg" alt="Hekim ağız içi tarayıcı ile dijital ölçü alıyor" loading="lazy" width="900" height="675"></picture></div>
+          <h3>Protez Tedavileri</h3><p>Hareketli, hibrit ve implant üstü protezler; ölçü ve prova seanslarıyla üretim.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="tcard" href="#">
+          <div class="tcard__img"><picture><source srcset="assets/img/patient-man.webp" type="image/webp"><img src="assets/img/patient-man.jpg" alt="Hekim, hastasının diş etlerini kontrol ediyor" loading="lazy" width="1000" height="750"></picture></div>
+          <h3>Diş Eti Tedavileri</h3><p>Diş taşı temizliği, flap operasyonu ve diş eti çekilmesinde greft uygulamaları.</p>
+          <span class="tcard__go"><svg><use href="#i-arrow"/></svg></span>
+        </a>
       </div>
-      <ul class="hero__trust" data-hero="5">
-        <li><svg><use href="#i-check"/></svg>Sağlık Bakanlığı ruhsatlı</li>
-        <li><svg><use href="#i-check"/></svg>Hasta hakları ve KVKK uyumu</li>
-        <li><svg><use href="#i-check"/></svg>TR · EN · DE · AR</li>
+      <div class="dots" data-dots="tx" aria-label="Tedavi sayfaları"></div>
+    </div>
+    <p class="tx-note reveal"><svg><use href="#i-info"/></svg>Tedavi uygunluğu, seans sayısı ve süre kişiye göre değişir; uygun tedaviye muayene sonrasında hekiminizle birlikte karar verilir. Kesin bilgi muayene sonrasında yazılı olarak verilir.</p>
+  </div>
+</section>
+
+<!-- ================= XL CTA ROW ================= -->
+<section aria-label="Randevu ve röntgen">
+  <div class="container cta-row">
+    <a class="btn btn--xl reveal" href="#randevu"><svg><use href="#i-calendar"/></svg>Online Randevu</a>
+    <a class="btn btn--xl btn--navy reveal" data-delay="1" href="#randevu"><svg><use href="#i-scan"/></svg>Röntgen Gönder</a>
+  </div>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span><span class="marquee__item">Çorlu / Tekirdağ</span><span class="marquee__item">Pzt–Cum 09:00–19:00</span>
+    <span class="marquee__item">Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span><span class="marquee__item">Çorlu / Tekirdağ</span><span class="marquee__item">Pzt–Cum 09:00–19:00</span>
+  </div>
+</div>
+
+<!-- ================= INTERNATIONAL (DARK BAND) ================= -->
+<section class="band-dark" id="uluslararasi" aria-labelledby="intl-title">
+  <div class="container band-dark__inner">
+    <div class="reveal">
+      <span class="eyebrow">Uluslararası Hastalar · International Patients</span>
+      <h2 id="intl-title">Tedaviniz için Türkiye'ye geliyorsanız, planlamayı birlikte yapıyoruz.</h2>
+      <p class="lead" style="margin-top:.9rem">İngilizce, Almanca ve Arapça konuşan hasta koordinatörlerimiz; randevu, konaklama ve ulaşım konularında bilgi verir. Plan, siz gelmeden önce yazılı olarak paylaşılır.</p>
+      <ul class="intl__list">
+        <li><svg><use href="#i-check"/></svg>Online ön değerlendirme ve yazılı tedavi planı</li>
+        <li><svg><use href="#i-check"/></svg>Seyahat takviminize göre seans planlaması</li>
+        <li><svg><use href="#i-check"/></svg>Transfer ve konaklama konusunda bilgilendirme</li>
+        <li><svg><use href="#i-check"/></svg>Tedavi sonrası uzaktan kontrol imkânı</li>
       </ul>
+      <div class="intl__langs"><span class="chip chip--dark">English</span><span class="chip chip--dark">Deutsch</span><span class="chip chip--dark">العربية</span><span class="chip chip--dark">Türkçe</span></div>
     </div>
-
-    <div class="hero__stage" data-hero="v">
-      <span class="hero__halo" aria-hidden="true"></span>
-      <svg class="hero__swoosh" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <path class="arc" d="M-6 72C20 108 74 104 106 26"/>
-        <g class="mover" opacity="0">
-          <path d="M0-4.5c.3 2.7 1 3.4 4.4 4.3C1 .7.3 1.4 0 4.5-.3 1.4-1 .7-4.4-.2-1-1.1-.3-1.8 0-4.5z"/>
-          <animateMotion dur="2.1s" begin="0.6s" fill="freeze" calcMode="spline" keySplines=".4 0 .2 1" keyTimes="0;1" path="M-6 72C20 108 74 104 106 26"/>
-          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.85;1" dur="2.4s" begin="0.6s" fill="freeze"/>
-        </g>
-      </svg>
-      <picture>
-        <source srcset="assets/img/hero-person.webp" type="image/webp">
-        <img class="hero__person" src="assets/img/hero-person.png" alt="Temsili görsel: gülümseyen bir kişi" width="1519" height="1300" fetchpriority="high">
-      </picture>
-      <svg class="hero__spark" aria-hidden="true"><use href="#i-spark"/></svg>
-      <svg class="hero__spark hero__spark--sm" aria-hidden="true"><use href="#i-spark"/></svg>
-      <div class="float-card float-card--1" data-hero="f">
-        <div class="float-card__icon"><svg><use href="#i-calendar"/></svg></div>
-        <div><strong>Online randevu</strong><span>Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00</span></div>
-      </div>
-      <div class="float-card float-card--2" data-hero="f">
-        <div class="float-card__icon"><svg><use href="#i-file"/></svg></div>
-        <div><strong>Tedavi bilgilendirme</strong><span>Hekimlerimizin bilgi yazıları</span></div>
-      </div>
-      <span class="hero__note" aria-hidden="true">Temsili görsel</span>
-      <div class="hero__badge" data-hero="b"><svg><use href="#i-clipboard"/></svg><div><strong>Bilgilendirilmiş onam</strong><small>her tedavi öncesinde</small></div></div>
-    </div>
-  </div>
-  <div class="hero__ticker" aria-hidden="true">
-    <div class="ticker__track"><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ortodonti ve Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Kanal Tedavisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Protez Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Diş Eti Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız, Diş ve Çene Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Estetik Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ortodonti ve Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Kanal Tedavisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Protez Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Diş Eti Tedavileri</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız, Diş ve Çene Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Estetik Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Pzt–Cum 09:00–19:00 · Cmt 09:00–17:00</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span></div>
-  </div>
-</section>
-
-<!-- ================= TREATMENTS ================= -->
-<section class="section" id="tedaviler" aria-labelledby="tedaviler-title">
-  <div class="container">
-    <div class="quick" aria-label="Hızlı erişim">
-      <a class="quick__item reveal" href="#randevu"><span class="quick__icon"><svg><use href="#i-calendar"/></svg></span><span><strong>Online Randevu</strong><span>Size uygun saati seçin</span></span><svg><use href="#i-arrow"/></svg></a>
-      <a class="quick__item reveal" data-delay="1" href="#randevu"><span class="quick__icon"><svg><use href="#i-scan"/></svg></span><span><strong>Röntgen Gönder</strong><span>Hekim ön değerlendirmesi</span></span><svg><use href="#i-arrow"/></svg></a>
-      <a class="quick__item reveal" data-delay="2" href="#uluslararasi"><span class="quick__icon"><svg><use href="#i-globe"/></svg></span><span><strong>Uluslararası Hastalar</strong><span>EN · DE · AR koordinasyon</span></span><svg><use href="#i-arrow"/></svg></a>
-      <a class="quick__item quick__item--alert reveal" data-delay="3" href="tel:+902820000000"><span class="quick__icon"><svg><use href="#i-alert"/></svg></span><span><strong>Diş Ağrısı</strong><span>Mesai saatlerinde telefonla ulaşın</span></span><svg><use href="#i-arrow"/></svg></a>
-    </div>
-
-    <div class="section-head section-head--row reveal">
-      <div>
-        <span class="eyebrow eyebrow--plain">Tedavilerimiz</span>
-        <h2 id="tedaviler-title">Ağız ve diş sağlığı hizmetlerimiz.</h2>
-        <p>Muayene, planlama ve tedavi; ilgili alandaki hekimlerimiz tarafından yürütülür. Uygun tedaviye muayene sonrasında birlikte karar verilir.</p>
-      </div>
-      <a class="link-arrow" href="#">Tüm tedaviler <svg><use href="#i-arrow"/></svg></a>
-    </div>
-
-    <div class="tx-grid rail">
-      <a class="tx-card reveal" href="tedaviler/implant.html">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-implant.webp" type="image/webp"><img src="assets/img/tx-implant.jpg" alt="Dental implant modeli" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-implant"/></svg></span></div>
-        <div class="tx-card__body"><h3>İmplant Tedavileri</h3><p>Eksik dişlerin implant destekli sabit veya hareketli protezlerle yeniden yapılandırılması.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>Ortalama 3–6 ay</span><span><svg><use href="#i-zap"/></svg>Lokal anestezi</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="1" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/smile-closeup.webp" type="image/webp"><img src="assets/img/smile-closeup.jpg" alt="Doğal görünümlü dişler" loading="lazy" width="1000" height="750"></picture><span class="tx-card__icon"><svg><use href="#i-sparkle"/></svg></span></div>
-        <div class="tx-card__body"><h3>Estetik Diş Hekimliği</h3><p>Lamine, zirkonyum ve E-max restorasyonlar; hekim kontrolünde diş beyazlatma.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>1–3 seans</span><span><svg><use href="#i-zap"/></svg>Lokal anestezi</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="2" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-aligner.webp" type="image/webp"><img src="assets/img/tx-aligner.jpg" alt="Şeffaf plak ve saklama kutusu" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-aligner"/></svg></span></div>
-        <div class="tx-card__body"><h3>Ortodonti &amp; Şeffaf Plak</h3><p>Yetişkin ve çocuklarda şeffaf plak ve braket seçenekleri; dijital planlama ile takip.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>6–24 ay</span><span><svg><use href="#i-calendar"/></svg>Düzenli kontrol</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="3" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-kids.webp" type="image/webp"><img src="assets/img/tx-kids.jpg" alt="Çocuk diş hekimi küçük hastasının dişlerini kontrol ediyor" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-child"/></svg></span></div>
-        <div class="tx-card__body"><h3>Çocuk Diş Hekimliği</h3><p>Koruyucu uygulamalar ve süt dişi tedavileri; gerektiğinde sedasyon desteği.</p><div class="tx-card__meta"><span><svg><use href="#i-heart"/></svg>Koruyucu bakım</span><span><svg><use href="#i-check"/></svg>Gerekirse sedasyon</span></div></div>
-      </a>
-      <a class="tx-card reveal" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-exam.webp" type="image/webp"><img src="assets/img/tx-exam.jpg" alt="Diş hekimi ayna ve sond ile muayene yapıyor" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-root"/></svg></span></div>
-        <div class="tx-card__body"><h3>Kanal Tedavisi</h3><p>Kök kanal tedavisi; tekrarlayan kanal tedavileri ve fiber post uygulamaları.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>1–2 seans</span><span><svg><use href="#i-zap"/></svg>Lokal anestezi</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="1" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-surgery.webp" type="image/webp"><img src="assets/img/tx-surgery.jpg" alt="Cerrahi ekip steril ortamda işlem uyguluyor" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-surgery"/></svg></span></div>
-        <div class="tx-card__body"><h3>Ağız, Diş ve Çene Cerrahisi</h3><p>Gömülü diş çekimi, kist operasyonları, sinüs lifting ve kemik greftleme.</p><div class="tx-card__meta"><span><svg><use href="#i-zap"/></svg>Lokal / sedasyon</span><span><svg><use href="#i-calendar"/></svg>Kontrol 7–10. gün</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="2" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/tx-scanner.webp" type="image/webp"><img src="assets/img/tx-scanner.jpg" alt="Hekim ağız içi tarayıcı ile dijital ölçü alıyor" loading="lazy" width="900" height="675"></picture><span class="tx-card__icon"><svg><use href="#i-denture"/></svg></span></div>
-        <div class="tx-card__body"><h3>Protez Tedavileri</h3><p>Hareketli, hibrit ve implant üstü protezler; ölçü ve prova seanslarıyla üretim.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>2–4 seans</span><span><svg><use href="#i-check"/></svg>Prova seansları</span></div></div>
-      </a>
-      <a class="tx-card reveal" data-delay="3" href="#">
-        <div class="tx-card__media"><picture><source srcset="assets/img/patient-man.webp" type="image/webp"><img src="assets/img/patient-man.jpg" alt="Hekim, hastasının diş etlerini kontrol ediyor" loading="lazy" width="1000" height="750"></picture><span class="tx-card__icon"><svg><use href="#i-gum"/></svg></span></div>
-        <div class="tx-card__body"><h3>Diş Eti Tedavileri</h3><p>Diş taşı temizliği, flap operasyonu ve diş eti çekilmesinde greft uygulamaları.</p><div class="tx-card__meta"><span><svg><use href="#i-clock"/></svg>1–2 seans</span><span><svg><use href="#i-zap"/></svg>Lokal anestezi</span></div></div>
-      </a>
-    </div>
-    <p class="rail-hint">Kaydırarak keşfedin <svg width="14" height="14"><use href="#i-arrow"/></svg></p>
-    <p class="tx-note reveal"><svg><use href="#i-info"/></svg>Belirtilen süreler ortalama değerlerdir; tedavi uygunluğu, seans sayısı ve süre kişiye göre değişir. Kesin bilgi muayene sonrasında yazılı olarak verilir.</p>
-
-    <div class="feature reveal" id="bilgi">
-      <div class="feature__media">
-        <picture><source srcset="assets/img/patient-man.webp" type="image/webp"><img src="assets/img/patient-man.jpg" alt="Temsili görsel: hekim, hastasına tedavi seçeneklerini anlatıyor" loading="lazy" width="1000" height="750"></picture>
-        <span class="feature__play" aria-hidden="true"><svg><use href="#i-play"/></svg>Tedavi anlatım videosu</span>
-      </div>
-      <div class="feature__body">
-        <svg class="feature__spark" aria-hidden="true"><use href="#i-spark"/></svg>
-        <span class="chip chip--dark"><svg><use href="#i-file"/></svg>Bilgilendirme</span>
-        <h3>Tedavi bilgilendirme yazıları ve videoları</h3>
-        <p>Her tedavi için nedir, kimlere uygulanır, aşamaları nelerdir ve olası riskleri; hekimlerimizin hazırladığı bilgi sayfalarında ve anlatım videolarında yer alır.</p>
-        <ol class="feature__steps">
-          <li><b>1</b>İlgili alandaki hekim tarafından yazılır ve tarihlenir</li>
-          <li><b>2</b>Kaynakça ve tıbbi inceleme bilgisi eklenir</li>
-          <li><b>3</b>Tanı ve tedavi yerine geçmez; muayene gerektirir</li>
-        </ol>
-        <a class="btn btn--aqua" href="tedaviler/implant.html"><svg><use href="#i-file"/></svg>Bilgi sayfalarına gidin</a>
-        <span class="feature__note">Sağlık bilgileri yalnızca yetkili hekimler tarafından hazırlanır; içerikler bilgilendirme amaçlıdır.</span>
-      </div>
+    <div class="intl__card reveal" data-delay="1">
+      <span class="chip chip--dark"><svg><use href="#i-plane"/></svg>Online ön değerlendirme</span>
+      <h3>Gelmeden önce planınızı netleştirin</h3>
+      <p>Panoramik röntgen ve birkaç fotoğraf ile hekimlerimiz ön değerlendirme yapar; kesin plan muayene sonrasında belirlenir.</p>
+      <ol class="intl__steps">
+        <li><b>1</b><span>Röntgen ve fotoğraflarınızı güvenli form üzerinden yükleyin.</span></li>
+        <li><b>2</b><span>Hekim değerlendirmesi ve yazılı ön plan e-posta ile iletilir.</span></li>
+        <li><b>3</b><span>Görüntülü görüşmede plan ve seyahat takvimi birlikte netleştirilir.</span></li>
+      </ol>
+      <a class="btn btn--primary" href="#randevu"><svg><use href="#i-scan"/></svg>Ön değerlendirme başlat</a>
+      <span class="intl__note">Uluslararası Sağlık Turizmi Yetki Belgesi No: •••••• · Sağlık verileriniz KVKK ve GDPR kapsamında korunur.</span>
     </div>
   </div>
 </section>
 
-<!-- ================= PRINCIPLES ================= -->
-<section class="section section--white" id="neden" aria-labelledby="neden-title">
-  <div class="container">
-    <div class="why">
-      <div class="reveal">
-        <span class="eyebrow eyebrow--plain">Çalışma İlkelerimiz</span>
-        <h2 id="neden-title" style="margin-top:.9rem">Her hasta için aynı süreç, aynı standart.</h2>
-        <p class="lead" style="margin-top:.9rem">Bilgilendirilmiş onam, yazılı tedavi planı ve izlenebilir sterilizasyon; kliniğimizde her hasta için uygulanan standart süreçlerdir.</p>
-        <div class="why__grid">
-          <div class="why__item"><span><svg><use href="#i-users"/></svg></span><h3>İlgili alandaki hekim</h3><p>Her tedavi, o alanda yetkili hekim tarafından planlanır ve uygulanır.</p></div>
-          <div class="why__item"><span><svg><use href="#i-info"/></svg></span><h3>Açık bilgilendirme</h3><p>Tedavi seçenekleri, süreç ve olası riskler muayene sonrasında sizinle birlikte değerlendirilir.</p></div>
-          <div class="why__item"><span><svg><use href="#i-droplet"/></svg></span><h3>Sterilizasyon ve hijyen</h3><p>Sterilizasyon süreçleri kayıt altında tutulur; tek kullanımlık sarf malzeme kullanılır.</p></div>
-          <div class="why__item"><span><svg><use href="#i-file"/></svg></span><h3>Yazılı tedavi planı</h3><p>Seçenekler, seans sayısı, süre ve ücret bilgisi muayene sonrasında yazılı olarak sunulur.</p></div>
-        </div>
-      </div>
-      <div class="why__visual reveal" data-delay="1">
-        <img class="tooth" src="assets/img/brand/tooth.svg" alt="" aria-hidden="true" width="95" height="90">
-        <div class="main"><picture><source srcset="assets/img/smile-soft.webp" type="image/webp"><img src="assets/img/smile-soft.jpg" alt="Temsili görsel" loading="lazy" width="900" height="1199"></picture></div>
-        <div class="card1"><span><svg><use href="#i-clipboard"/></svg></span><div><strong>Bilgilendirilmiş onam</strong><small>Her tedavi öncesinde</small></div></div>
-        <div class="card2"><svg><use href="#i-shield"/></svg>Sağlık Bakanlığı ruhsatlı</div>
-      </div>
+<!-- ================= ABOUT (NAVY BAND) ================= -->
+<section class="band-navy" id="hakkimizda" aria-labelledby="about-title">
+  <div class="container band-navy__inner">
+    <div class="reveal">
+      <span class="eyebrow">Hakkımızda</span>
+      <h2 id="about-title">Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği</h2>
+      <p>Çorlu'da, Sağlık Bakanlığı ruhsatlı özel bir ağız ve diş sağlığı polikliniğiyiz. Tedaviler, ilgili alandaki hekimlerimiz tarafından planlanır; her hasta için bilgilendirilmiş onam, yazılı tedavi planı ve izlenebilir sterilizasyon süreci uygulanır.</p>
     </div>
-    <div class="principles reveal">
-      <div class="principle"><span><svg><use href="#i-heart"/></svg></span><div><strong>Hasta hakları</strong><small>Hasta Hakları Yönetmeliği'ne uygun bilgilendirme ve onam süreci.</small></div></div>
-      <div class="principle"><span><svg><use href="#i-lock"/></svg></span><div><strong>KVKK uyumu</strong><small>Sağlık verileriniz yalnızca açık rızanızla ve tedavi amacıyla işlenir.</small></div></div>
-      <div class="principle"><span><svg><use href="#i-droplet"/></svg></span><div><strong>Sterilizasyon kaydı</strong><small>Her seans için izlenebilir sterilizasyon kaydı tutulur.</small></div></div>
-      <div class="principle"><span><svg><use href="#i-file"/></svg></span><div><strong>Yazılı plan ve ücret bilgisi</strong><small>Muayene sonrasında, tedaviye başlamadan önce paylaşılır.</small></div></div>
-    </div>
+    <a class="link-arrow reveal" data-delay="1" href="#klinik">Kliniğimizi tanıyın <svg><use href="#i-arrow"/></svg></a>
   </div>
 </section>
 
-<!-- ================= PROCESS ================= -->
-<section class="section" id="surec" aria-labelledby="surec-title">
+<!-- ================= CLINIC ================= -->
+<section class="sec" id="klinik" aria-labelledby="klinik-title">
   <div class="container">
-    <div class="section-head section-head--center reveal">
-      <span class="eyebrow eyebrow--plain">Tedavi Süreci</span>
-      <h2 id="surec-title">İlk görüşmeden takibe, dört adım.</h2>
-      <p>Süreç her hastamız için aynı şekilde ilerler; süreler ve seans sayıları kişiye göre değişebilir.</p>
+    <div class="sec__head reveal">
+      <div><span class="eyebrow">Kaya Alp</span><h2 id="klinik-title">Kliniğimiz</h2></div>
     </div>
-    <ol class="steps reveal">
-      <span class="steps__bar" aria-hidden="true"></span>
-      <li class="step"><span class="step__num">1</span><div class="step__card"><span class="meta">1. randevu · 30–40 dk</span><h3>Ön görüşme ve muayene</h3><p>Klinik muayene ve gerekli görüntüleme ile mevcut durum değerlendirilir.</p><ul><li><svg><use href="#i-tick"/></svg>Klinik muayene</li><li><svg><use href="#i-tick"/></svg>Gerekli röntgen / görüntüleme</li></ul></div></li>
-      <li class="step"><span class="step__num">2</span><div class="step__card"><span class="meta">Muayene sonrası</span><h3>Kişiye özel tedavi planı</h3><p>Seçenekler, seans sayısı, süre ve ücret bilgisi yazılı olarak paylaşılır.</p><ul><li><svg><use href="#i-tick"/></svg>Alternatiflerin karşılaştırılması</li><li><svg><use href="#i-tick"/></svg>Bilgilendirilmiş onam</li></ul></div></li>
-      <li class="step"><span class="step__num">3</span><div class="step__card"><span class="meta">Planlanan seanslar</span><h3>Tedavi</h3><p>Planlanan seanslarda, gerektiğinde sedasyon desteğiyle uygulanır.</p><ul><li><svg><use href="#i-tick"/></svg>Lokal anestezi</li><li><svg><use href="#i-tick"/></svg>Gerektiğinde sedasyon desteği</li></ul></div></li>
-      <li class="step"><span class="step__num">4</span><div class="step__card"><span class="meta">Sürekli</span><h3>Kontrol ve koruyucu bakım</h3><p>Kontrol randevuları planlanır; ağız hijyeni eğitimi verilir.</p><ul><li><svg><use href="#i-tick"/></svg>Kontrol takvimi</li><li><svg><use href="#i-tick"/></svg>Hasta dosyası ve kayıtlar</li></ul></div></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ================= DOCTORS ================= -->
-<section class="section section--white" id="hekimler" aria-labelledby="hekimler-title">
-  <div class="container">
-    <div class="section-head section-head--row reveal">
-      <div>
-        <span class="eyebrow eyebrow--plain">Hekimlerimiz</span>
-        <h2 id="hekimler-title">Hekimlerimiz ve uzmanlık alanları.</h2>
-        <p>Diploma ve uzmanlık bilgileri her hekim profilinde yer alır. Randevunuzu hekim seçerek planlayabilirsiniz.</p>
-      </div>
-      <a class="link-arrow" href="#">Tüm hekimler <svg><use href="#i-arrow"/></svg></a>
+    <div class="gallery3 reveal" data-lightbox>
+      <figure><picture><source srcset="assets/img/clinic-chair-wide.webp" type="image/webp"><img src="assets/img/clinic-chair-wide.jpg" alt="Tedavi odası" loading="lazy" width="1200" height="750"></picture><figcaption>Tedavi odası</figcaption></figure>
+      <figure><picture><source srcset="assets/img/clinic-room.webp" type="image/webp"><img src="assets/img/clinic-room.jpg" alt="Konsültasyon odası" loading="lazy" width="1000" height="750"></picture><figcaption>Konsültasyon odası</figcaption></figure>
+      <figure><picture><source srcset="assets/img/clinic-chair-portrait.webp" type="image/webp"><img src="assets/img/clinic-chair-portrait.jpg" alt="Tedavi odası" loading="lazy" width="900" height="1200"></picture><figcaption>Tedavi odası</figcaption></figure>
     </div>
-    <div class="docs rail">
-      <article class="doc reveal">
-        <div class="doc__photo"><picture><source srcset="assets/img/dr-1.webp" type="image/webp"><img src="assets/img/dr-1.jpg" alt="Dt. Ahmet Kaya Alp" loading="lazy" width="800" height="1000"></picture><span class="chip chip--white doc__spec">Kurucu Hekim</span></div>
-        <div class="doc__body"><h3>Dt. Ahmet Kaya Alp</h3><span class="role">Diş Hekimi · İlgi alanları: implant, estetik restorasyonlar</span><span class="reg">Diploma Tescil No: ••••••</span><div class="doc__actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div></div>
-      </article>
-      <article class="doc reveal" data-delay="1">
-        <div class="doc__photo"><picture><source srcset="assets/img/dr-2.webp" type="image/webp"><img src="assets/img/dr-2.jpg" alt="Uzm. Dt. Elif Aydın" loading="lazy" width="800" height="1000"></picture><span class="chip chip--white doc__spec">Ortodonti Uzmanı</span></div>
-        <div class="doc__body"><h3>Uzm. Dt. Elif Aydın</h3><span class="role">Ortodonti Uzmanı · İlgi alanları: şeffaf plak, çocuk ortodontisi</span><span class="reg">Diploma Tescil No: ••••••</span><div class="doc__actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div></div>
-      </article>
-      <article class="doc reveal" data-delay="2">
-        <div class="doc__photo"><picture><source srcset="assets/img/dr-3.webp" type="image/webp"><img src="assets/img/dr-3.jpg" alt="Dr. Dt. Can Yılmaz" loading="lazy" width="800" height="1000"></picture><span class="chip chip--white doc__spec">Protetik Diş Tedavisi Uzmanı</span></div>
-        <div class="doc__body"><h3>Dr. Dt. Can Yılmaz</h3><span class="role">Protetik Diş Tedavisi Uzmanı · İlgi alanı: implant üstü protez</span><span class="reg">Diploma Tescil No: ••••••</span><div class="doc__actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div></div>
-      </article>
-      <article class="doc reveal" data-delay="3">
-        <div class="doc__photo"><picture><source srcset="assets/img/dr-4.webp" type="image/webp"><img src="assets/img/dr-4.jpg" alt="Uzm. Dt. Zeynep Demir" loading="lazy" width="800" height="1000"></picture><span class="chip chip--white doc__spec">Çocuk Diş Hekimliği Uzmanı</span></div>
-        <div class="doc__body"><h3>Uzm. Dt. Zeynep Demir</h3><span class="role">Çocuk Diş Hekimliği Uzmanı · İlgi alanı: sedasyon altında tedavi</span><span class="reg">Diploma Tescil No: ••••••</span><div class="doc__actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div></div>
-      </article>
-    </div>
-    <p class="rail-hint">Kaydırarak keşfedin <svg width="14" height="14"><use href="#i-arrow"/></svg></p>
-  </div>
-</section>
-
-<!-- ================= CLINIC & TECH ================= -->
-<section class="section" id="klinik" aria-labelledby="klinik-title">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow eyebrow--plain">Kliniğimiz</span>
-      <h2 id="klinik-title">Klinik alanlarımız ve pratik bilgiler.</h2>
-      <p>Tedavi odaları ve bekleme alanımız; ulaşım, çalışma saatleri, erişilebilirlik ve randevu süreci hakkında bilgiler.</p>
-    </div>
-    <div class="gallery reveal" data-lightbox>
-      <figure class="g1"><picture><source srcset="assets/img/clinic-chair-portrait.webp" type="image/webp"><img src="assets/img/clinic-chair-portrait.jpg" alt="Tedavi odası" loading="lazy" width="900" height="1200"></picture><figcaption>Tedavi odası</figcaption></figure>
-      <figure class="g2"><picture><source srcset="assets/img/clinic-room.webp" type="image/webp"><img src="assets/img/clinic-room.jpg" alt="Konsültasyon odası" loading="lazy" width="1000" height="750"></picture><figcaption>Konsültasyon odası</figcaption></figure>
-      <figure class="g5"><picture><source srcset="assets/img/clinic-chair-wide.webp" type="image/webp"><img src="assets/img/clinic-chair-wide.jpg" alt="Tedavi odası" loading="lazy" width="1200" height="750"></picture><figcaption>Tedavi odası</figcaption></figure>
-    </div>
-    <ul class="tech">
-      <li class="tech__item reveal"><span><svg><use href="#i-pin"/></svg></span><div><strong>Adres ve ulaşım</strong><small>Örnek Cad. No:1, Kat 2, Çorlu / Tekirdağ. Toplu taşıma durağına yürüme mesafesindedir.</small></div></li>
-      <li class="tech__item reveal" data-delay="1"><span><svg><use href="#i-clock"/></svg></span><div><strong>Çalışma saatleri</strong><small>Pazartesi–Cuma 09:00–19:00 · Cumartesi 09:00–17:00 · Pazar kapalı.</small></div></li>
-      <li class="tech__item reveal" data-delay="2"><span><svg><use href="#i-hospital"/></svg></span><div><strong>Erişilebilirlik</strong><small>Asansör ve tekerlekli sandalye erişimi mevcuttur; ihtiyaç hâlinde önceden bilgi verebilirsiniz.</small></div></li>
-      <li class="tech__item reveal"><span><svg><use href="#i-calendar"/></svg></span><div><strong>Randevu ve teyit</strong><small>Talepler hasta danışmanımız tarafından telefonla teyit edilir; değişiklik için mesai saatlerinde ulaşın.</small></div></li>
-      <li class="tech__item reveal" data-delay="1"><span><svg><use href="#i-droplet"/></svg></span><div><strong>Sterilizasyon ve hijyen</strong><small>Sterilizasyon süreçleri kayıt altında tutulur; tek kullanımlık sarf malzeme kullanılır.</small></div></li>
-      <li class="tech__item reveal" data-delay="2"><span><svg><use href="#i-lock"/></svg></span><div><strong>Kişisel verileriniz</strong><small>Sağlık verileriniz KVKK kapsamında, yalnızca açık rızanızla ve tedavi amacıyla işlenir.</small></div></li>
+    <ul class="infos">
+      <li class="info reveal"><span class="ico"><svg><use href="#i-pin"/></svg></span><div><strong>Adres ve ulaşım</strong><small>Örnek Cad. No:1, Kat 2, Çorlu / Tekirdağ. Toplu taşıma durağına yürüme mesafesindedir.</small></div></li>
+      <li class="info reveal" data-delay="1"><span class="ico"><svg><use href="#i-clock"/></svg></span><div><strong>Çalışma saatleri</strong><small>Pazartesi–Cuma 09:00–19:00 · Cumartesi 09:00–17:00 · Pazar kapalı.</small></div></li>
+      <li class="info reveal" data-delay="2"><span class="ico"><svg><use href="#i-hospital"/></svg></span><div><strong>Erişilebilirlik</strong><small>Asansör ve tekerlekli sandalye erişimi mevcuttur; ihtiyaç hâlinde önceden bilgi verebilirsiniz.</small></div></li>
+      <li class="info reveal"><span class="ico"><svg><use href="#i-calendar"/></svg></span><div><strong>Randevu ve teyit</strong><small>Talepler hasta danışmanımız tarafından telefonla teyit edilir; değişiklik için mesai saatlerinde ulaşın.</small></div></li>
+      <li class="info reveal" data-delay="1"><span class="ico"><svg><use href="#i-droplet"/></svg></span><div><strong>Sterilizasyon ve hijyen</strong><small>Sterilizasyon süreçleri kayıt altında tutulur; tek kullanımlık sarf malzeme kullanılır.</small></div></li>
+      <li class="info reveal" data-delay="2"><span class="ico"><svg><use href="#i-lock"/></svg></span><div><strong>Kişisel verileriniz</strong><small>Sağlık verileriniz KVKK kapsamında, yalnızca açık rızanızla ve tedavi amacıyla işlenir.</small></div></li>
     </ul>
   </div>
 </section>
 
-<!-- ================= INTERNATIONAL ================= -->
-<svg class="curve curve--down" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 64V40C360 8 1080 8 1440 40v24z"/></svg>
-<section class="section section--navy" id="uluslararasi" aria-labelledby="intl-title">
+<!-- ================= DOCTORS CAROUSEL ================= -->
+<section class="sec sec--card" id="hekimler" aria-labelledby="hekimler-title">
   <div class="container">
-    <div class="intl">
+    <div class="sec__head reveal">
+      <div><span class="eyebrow">Kaya Alp</span><h2 id="hekimler-title">Hekimlerimiz</h2><p>Diploma ve uzmanlık bilgileri her hekim profilinde yer alır. Randevunuzu hekim seçerek planlayabilirsiniz.</p></div>
+      <div class="arrows"><button class="arrow" type="button" data-prev="docs" aria-label="Önceki hekimler"><svg><use href="#i-chevron-l"/></svg></button><button class="arrow" type="button" data-next="docs" aria-label="Sonraki hekimler"><svg><use href="#i-chevron-r"/></svg></button></div>
+    </div>
+    <div class="carousel carousel--4 reveal" data-carousel="docs">
+      <div class="carousel__track">
+        <article class="dcard">
+          <div class="dcard__img"><picture><source srcset="assets/img/dr-1.webp" type="image/webp"><img src="assets/img/dr-1.jpg" alt="Dt. Ahmet Kaya Alp" loading="lazy" width="800" height="1000"></picture></div>
+          <h3>Dt. Ahmet Kaya Alp</h3><span class="role">Diş Hekimi · Kurucu Hekim</span><span class="sub">İlgi alanları: implant, estetik restorasyonlar</span><span class="reg">Diploma Tescil No: ••••••</span>
+          <div class="actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div>
+        </article>
+        <article class="dcard">
+          <div class="dcard__img"><picture><source srcset="assets/img/dr-2.webp" type="image/webp"><img src="assets/img/dr-2.jpg" alt="Uzm. Dt. Elif Aydın" loading="lazy" width="800" height="1000"></picture></div>
+          <h3>Uzm. Dt. Elif Aydın</h3><span class="role">Ortodonti Uzmanı</span><span class="sub">İlgi alanları: şeffaf plak, çocuk ortodontisi</span><span class="reg">Diploma Tescil No: ••••••</span>
+          <div class="actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div>
+        </article>
+        <article class="dcard">
+          <div class="dcard__img"><picture><source srcset="assets/img/dr-3.webp" type="image/webp"><img src="assets/img/dr-3.jpg" alt="Dr. Dt. Can Yılmaz" loading="lazy" width="800" height="1000"></picture></div>
+          <h3>Dr. Dt. Can Yılmaz</h3><span class="role">Protetik Diş Tedavisi Uzmanı</span><span class="sub">İlgi alanı: implant üstü protez</span><span class="reg">Diploma Tescil No: ••••••</span>
+          <div class="actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div>
+        </article>
+        <article class="dcard">
+          <div class="dcard__img"><picture><source srcset="assets/img/dr-4.webp" type="image/webp"><img src="assets/img/dr-4.jpg" alt="Uzm. Dt. Zeynep Demir" loading="lazy" width="800" height="1000"></picture></div>
+          <h3>Uzm. Dt. Zeynep Demir</h3><span class="role">Çocuk Diş Hekimliği Uzmanı</span><span class="sub">İlgi alanı: sedasyon altında tedavi</span><span class="reg">Diploma Tescil No: ••••••</span>
+          <div class="actions"><a class="btn btn--outline btn--sm" href="#">Profil</a><a class="btn btn--primary btn--sm" href="#randevu">Randevu</a></div>
+        </article>
+      </div>
+      <div class="dots" data-dots="docs" aria-label="Hekim sayfaları"></div>
+    </div>
+    <p class="tx-note reveal"><svg><use href="#i-info"/></svg>Hekim unvanları, Sağlık Bakanlığı tescilli diploma ve uzmanlık belgelerine göre yazılmıştır. Uzmanlık dışındaki çalışma alanları "ilgi alanı" olarak belirtilir.</p>
+  </div>
+</section>
+
+<!-- ================= INFO ARTICLES (compact) ================= -->
+<section class="sec" id="bilgi" aria-labelledby="bilgi-title" style="padding-bottom:0">
+  <div class="container">
+    <div class="band-navy__inner" style="background:var(--card);border-radius:16px;padding:32px 36px">
       <div class="reveal">
-        <span class="eyebrow">Uluslararası Hastalar · International Patients</span>
-        <h2 id="intl-title" style="margin-top:.9rem">Tedaviniz için Türkiye'ye geliyorsanız, planlamayı birlikte yapıyoruz.</h2>
-        <p class="lead" style="margin-top:.9rem;color:rgba(255,255,255,.74)">İngilizce, Almanca ve Arapça konuşan hasta koordinatörlerimiz; randevu, konaklama ve ulaşım konularında bilgi verir. Plan, siz gelmeden önce yazılı olarak paylaşılır.</p>
-        <ul class="intl__list">
-          <li><svg><use href="#i-check"/></svg>Online ön değerlendirme ve yazılı tedavi planı</li>
-          <li><svg><use href="#i-check"/></svg>Seyahat takviminize göre seans planlaması</li>
-          <li><svg><use href="#i-check"/></svg>Transfer ve konaklama konusunda bilgilendirme</li>
-          <li><svg><use href="#i-check"/></svg>Tedavi sonrası uzaktan kontrol imkânı</li>
-        </ul>
-        <div class="intl__langs"><span class="chip chip--dark">English</span><span class="chip chip--dark">Deutsch</span><span class="chip chip--dark">العربية</span><span class="chip chip--dark">Türkçe</span></div>
+        <span class="eyebrow">Tedavi bilgilendirme yazıları ve videoları</span>
+        <h2 id="bilgi-title" style="font-size:28px">Her tedavi için nedir, kimlere uygulanır, aşamaları ve olası riskleri.</h2>
+        <p style="margin-top:8px;max-width:64ch">Bilgi sayfaları ilgili alandaki hekim tarafından yazılır ve tarihlenir; kaynakça ve tıbbi inceleme bilgisi eklenir. İçerikler bilgilendirme amaçlıdır, tanı ve tedavi yerine geçmez.</p>
       </div>
-      <div class="intl__card reveal" data-delay="1">
-        <span class="chip chip--dark"><svg><use href="#i-plane"/></svg>Online ön değerlendirme</span>
-        <h3>Gelmeden önce planınızı netleştirin</h3>
-        <p>Panoramik röntgen ve birkaç fotoğraf ile hekimlerimiz ön değerlendirme yapar; kesin plan muayene sonrasında belirlenir.</p>
-        <ol class="intl__steps">
-          <li><b>1</b><span>Röntgen ve fotoğraflarınızı güvenli form üzerinden yükleyin.</span></li>
-          <li><b>2</b><span>Hekim değerlendirmesi ve yazılı ön plan e-posta ile iletilir.</span></li>
-          <li><b>3</b><span>Görüntülü görüşmede plan ve seyahat takvimi birlikte netleştirilir.</span></li>
-        </ol>
-        <a class="btn btn--aqua btn--lg" href="#randevu"><svg><use href="#i-scan"/></svg>Ön değerlendirme başlat</a>
-        <span class="intl__note">Uluslararası Sağlık Turizmi Yetki Belgesi No: •••••• · Sağlık verileriniz KVKK ve GDPR kapsamında korunur.</span>
-      </div>
+      <a class="btn btn--primary reveal" data-delay="1" href="tedaviler/implant.html"><svg><use href="#i-file"/></svg>Bilgi sayfalarına gidin</a>
     </div>
   </div>
 </section>
-<svg class="curve curve--up" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 64V40C360 8 1080 8 1440 40v24z"/></svg>
 
 <!-- ================= FAQ ================= -->
-<section class="section" id="sss" aria-labelledby="sss-title">
+<section class="sec" id="sss" aria-labelledby="sss-title">
   <div class="container">
-    <div class="faq">
-      <div class="faq__aside reveal">
-        <div>
-          <span class="eyebrow eyebrow--plain">Hasta Rehberi · SSS</span>
-          <h2 id="sss-title" style="margin-top:.9rem">Merak ettikleriniz, hekimlerimizin yanıtlarıyla.</h2>
-          <p style="margin-top:.9rem;color:var(--ink-3)">Bu yanıtlar genel bilgilendirme amaçlıdır; kişisel tanı ve tedavi için hekim muayenesi gereklidir.</p>
-        </div>
-        <div class="card"><h3>İlk randevunuza gelirken</h3><p>Varsa önceki röntgenleriniz, kullandığınız ilaçların listesi ve kimliğiniz yeterli. İlk görüşme yaklaşık 30–40 dakika sürer.</p></div>
-        <div class="card"><h3>Sorunuz burada yok mu?</h3><p>Hasta danışmanlarımız mesai saatlerinde telefon ve WhatsApp üzerinden yanıtlar.</p><div style="display:flex;gap:.5rem;flex-wrap:wrap"><a class="btn btn--whatsapp btn--sm" href="https://wa.me/905000000000"><svg><use href="#i-whatsapp"/></svg>WhatsApp</a><a class="btn btn--outline btn--sm" href="tel:+902820000000"><svg><use href="#i-phone"/></svg>Arayın</a></div></div>
-      </div>
-      <div class="accordion reveal" data-delay="1">
+    <div class="sec__head sec__head--center reveal">
+      <div style="text-align:center"><span class="eyebrow">Hasta Rehberi</span><h2 id="sss-title">Sıkça Sorulan Sorular</h2><p style="margin-inline:auto">Bu yanıtlar genel bilgilendirme amaçlıdır; kişisel tanı ve tedavi için hekim muayenesi gereklidir.</p></div>
+    </div>
+    <div class="faq2 reveal">
+      <div class="accordion">
         <div class="acc is-open"><h3><button class="acc__btn" type="button" aria-expanded="true" aria-controls="faq-1">İmplant tedavisi kimlere uygulanabilir?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-1" role="region"><div><p>Genel sağlık durumu uygun, çene gelişimi tamamlanmış ve yeterli kemik hacmine sahip bireylerde değerlendirilebilir. Kemik hacmi yetersizse greft veya sinüs lifting ile hazırlık gerekebilir. Uygunluk; klinik muayene ve gerekli görüntüleme sonrasında hekiminiz tarafından belirlenir.</p></div></div></div>
         <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-2">Kanal tedavisi ağrılı mıdır?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-2" role="region"><div><p>Kanal tedavisi lokal anestezi altında yapılır. Tedavi sonrası birkaç gün hassasiyet görülebilir; bu durum kişiye göre değişir. Sorularınız için hekiminize danışın.</p></div></div></div>
         <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-3">Şeffaf plak tedavisi ne kadar sürer?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-3" role="region"><div><p>Süre, vakanın karmaşıklığına göre değişir; hafif çapraşıklıklarda birkaç ay, kapsamlı vakalarda 12–24 ay sürebilir. Tahmini süre, dijital planlama sonrasında hekiminiz tarafından belirtilir.</p></div></div></div>
+      </div>
+      <div class="accordion">
         <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-4">Diş beyazlatma dişlere zarar verir mi?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-4" role="region"><div><p>Hekim kontrolünde, uygun konsantrasyon ve sürede uygulanan beyazlatmada mine üzerinde kalıcı hasar beklenmez; geçici hassasiyet görülebilir. Kontrolsüz ev tipi ürünler ise risk taşıyabilir.</p></div></div></div>
         <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-5">Çocuğumu ilk kez ne zaman diş hekimine götürmeliyim?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-5" role="region"><div><p>İlk süt dişinin sürmesiyle birlikte veya en geç 1 yaşında ilk kontrol önerilir. Erken kontrol, çürük riskinin izlenmesine ve çocuğun diş hekimine alışmasına yardımcı olur.</p></div></div></div>
         <div class="acc"><h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-6">Sedasyon ile diş tedavisi nasıl uygulanır?<span class="ico"><svg><use href="#i-plus"/></svg></span></button></h3><div class="acc__panel" id="faq-6" role="region"><div><p>Sedasyon, anestezi uzmanı eşliğinde ve uygun donanımla uygulanan bir yöntemdir. Her tıbbi yöntem gibi riskleri vardır; öncesinde genel sağlık değerlendirmesi yapılır ve uygunluk hekim tarafından belirlenir.</p></div></div></div>
       </div>
     </div>
+    <p class="faq__note reveal">Sorunuz burada yok mu? Hasta danışmanlarımız mesai saatlerinde <a href="tel:+902820000000" style="color:var(--navy);font-weight:500">telefon</a> ve <a href="https://wa.me/905000000000" style="color:var(--navy);font-weight:500">WhatsApp</a> üzerinden yanıtlar.</p>
   </div>
 </section>
 
-<!-- ================= BLOG ================= -->
-<section class="section section--white" id="blog" aria-labelledby="blog-title">
+<!-- ================= BLOG CAROUSEL ================= -->
+<section class="sec sec--card" id="blog" aria-labelledby="blog-title">
   <div class="container">
-    <div class="section-head section-head--row reveal">
-      <div>
-        <span class="eyebrow eyebrow--plain">Sağlık Köşesi</span>
-        <h2 id="blog-title">Hekimlerimizden bilgilendirme yazıları.</h2>
-        <p>Her yazı, ilgili alandaki hekimimiz tarafından yazılır ve tarihlenir.</p>
+    <div class="sec__head reveal">
+      <div><span class="eyebrow">Kaya Alp</span><h2 id="blog-title">Blog</h2><p>Her yazı, ilgili alandaki hekimimiz tarafından yazılır ve tarihlenir.</p></div>
+      <div class="arrows"><button class="arrow" type="button" data-prev="blog" aria-label="Önceki yazılar"><svg><use href="#i-chevron-l"/></svg></button><button class="arrow" type="button" data-next="blog" aria-label="Sonraki yazılar"><svg><use href="#i-chevron-r"/></svg></button></div>
+    </div>
+    <div class="carousel reveal" data-carousel="blog">
+      <div class="carousel__track">
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/blog-aligner.webp" type="image/webp"><img src="assets/img/blog-aligner.jpg" alt="Şeffaf plak" loading="lazy" width="900" height="563"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Ortodonti</span><time datetime="2026-08-28">28 Ağustos 2026</time><span>· 5 dk</span></div>
+          <h3><a href="#">Şeffaf plak mı, braket mi? Hangi durumda hangisi değerlendirilir?</a></h3>
+          <p>İki yöntemin özelliklerini, sınırlarını ve hekiminizin karar verirken nelere baktığını anlatıyoruz.</p>
+          <div class="author"><img src="assets/img/dr-2.jpg" alt="" width="28" height="28"><span>Uzm. Dt. Elif Aydın · Ortodonti Uzmanı</span></div>
+        </article>
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/blog-exam.webp" type="image/webp"><img src="assets/img/blog-exam.jpg" alt="Diş muayenesi" loading="lazy" width="900" height="563"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Genel Diş Hekimliği</span><time datetime="2026-08-14">14 Ağustos 2026</time><span>· 4 dk</span></div>
+          <h3><a href="#">Diş taşı temizliği dişleri inceltir mi?</a></h3>
+          <p>Sık duyduğumuz bir endişeyi bilimsel kaynaklarla ve sade bir dille açıklıyoruz.</p>
+          <div class="author"><img src="assets/img/dr-1.jpg" alt="" width="28" height="28"><span>Dt. Ahmet Kaya Alp · Diş Hekimi</span></div>
+        </article>
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/blog-kids.webp" type="image/webp"><img src="assets/img/blog-kids.jpg" alt="Çocuk diş muayenesi" loading="lazy" width="900" height="563"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Çocuk Diş Hekimliği</span><time datetime="2026-07-30">30 Temmuz 2026</time><span>· 6 dk</span></div>
+          <h3><a href="#">Çocuklarda flor uygulaması: ne zaman, ne sıklıkla?</a></h3>
+          <p>Koruyucu diş hekimliğinin araçlarından biri hakkında ebeveynlerin bilmesi gerekenler.</p>
+          <div class="author"><img src="assets/img/dr-4.jpg" alt="" width="28" height="28"><span>Uzm. Dt. Zeynep Demir · Çocuk Diş Hekimliği Uzmanı</span></div>
+        </article>
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/tx-digital.webp" type="image/webp"><img src="assets/img/tx-digital.jpg" alt="Dijital ölçü" loading="lazy" width="900" height="675"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Protez</span><time datetime="2026-07-16">16 Temmuz 2026</time><span>· 4 dk</span></div>
+          <h3><a href="#">Dijital ölçü nedir, geleneksel ölçüden farkı ne?</a></h3>
+          <p>Ağız içi tarayıcı ile alınan ölçünün süreci ve hangi durumlarda tercih edildiği.</p>
+          <div class="author"><img src="assets/img/dr-3.jpg" alt="" width="28" height="28"><span>Dr. Dt. Can Yılmaz · Protetik Diş Tedavisi Uzmanı</span></div>
+        </article>
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/tx-xray.webp" type="image/webp"><img src="assets/img/tx-xray.jpg" alt="Panoramik röntgen" loading="lazy" width="900" height="675"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Tanı</span><time datetime="2026-07-02">2 Temmuz 2026</time><span>· 3 dk</span></div>
+          <h3><a href="#">Panoramik röntgen ne gösterir, ne zaman gerekir?</a></h3>
+          <p>Diş hekiminizin ilk muayenede neden röntgen isteyebileceğini açıklıyoruz.</p>
+          <div class="author"><img src="assets/img/dr-1.jpg" alt="" width="28" height="28"><span>Dt. Ahmet Kaya Alp · Diş Hekimi</span></div>
+        </article>
+        <article class="bcard">
+          <a class="bcard__img" href="#"><picture><source srcset="assets/img/smile-closeup.webp" type="image/webp"><img src="assets/img/smile-closeup.jpg" alt="Diş beyazlatma" loading="lazy" width="1000" height="750"></picture></a>
+          <div class="meta"><span class="chip chip--teal">Estetik</span><time datetime="2026-06-18">18 Haziran 2026</time><span>· 5 dk</span></div>
+          <h3><a href="#">Diş beyazlatma hakkında bilinmesi gerekenler</a></h3>
+          <p>Yöntemler, geçici hassasiyet ve hekim kontrolünün önemi üzerine sade bir rehber.</p>
+          <div class="author"><img src="assets/img/dr-1.jpg" alt="" width="28" height="28"><span>Dt. Ahmet Kaya Alp · Diş Hekimi</span></div>
+        </article>
       </div>
-      <a class="link-arrow" href="#">Tüm yazılar <svg><use href="#i-arrow"/></svg></a>
+      <div class="dots" data-dots="blog" aria-label="Blog sayfaları"></div>
     </div>
-    <div class="posts rail">
-      <article class="post reveal">
-        <a class="post__media" href="#"><picture><source srcset="assets/img/blog-aligner.webp" type="image/webp"><img src="assets/img/blog-aligner.jpg" alt="Şeffaf plak" loading="lazy" width="900" height="563"></picture></a>
-        <div class="post__meta"><span class="chip chip--teal">Ortodonti</span><time datetime="2026-08-28">28 Ağustos 2026</time><span>· 5 dk</span></div>
-        <h3><a href="#">Şeffaf plak mı, braket mi? Hangi durumda hangisi değerlendirilir?</a></h3>
-        <p>İki yöntemin özelliklerini, sınırlarını ve hekiminizin karar verirken nelere baktığını anlatıyoruz.</p>
-        <div class="post__author"><img src="assets/img/dr-2.jpg" alt="" width="28" height="28"><span>Uzm. Dt. Elif Aydın · Ortodonti Uzmanı</span></div>
-      </article>
-      <article class="post reveal" data-delay="1">
-        <a class="post__media" href="#"><picture><source srcset="assets/img/blog-exam.webp" type="image/webp"><img src="assets/img/blog-exam.jpg" alt="Diş muayenesi" loading="lazy" width="900" height="563"></picture></a>
-        <div class="post__meta"><span class="chip chip--teal">Genel Diş Hekimliği</span><time datetime="2026-08-14">14 Ağustos 2026</time><span>· 4 dk</span></div>
-        <h3><a href="#">Diş taşı temizliği dişleri inceltir mi?</a></h3>
-        <p>Sık duyduğumuz bir endişeyi bilimsel kaynaklarla ve sade bir dille açıklıyoruz.</p>
-        <div class="post__author"><img src="assets/img/dr-1.jpg" alt="" width="28" height="28"><span>Dt. Ahmet Kaya Alp · Kurucu Hekim</span></div>
-      </article>
-      <article class="post reveal" data-delay="2">
-        <a class="post__media" href="#"><picture><source srcset="assets/img/blog-kids.webp" type="image/webp"><img src="assets/img/blog-kids.jpg" alt="Çocuk diş muayenesi" loading="lazy" width="900" height="563"></picture></a>
-        <div class="post__meta"><span class="chip chip--teal">Çocuk Diş Hekimliği</span><time datetime="2026-07-30">30 Temmuz 2026</time><span>· 6 dk</span></div>
-        <h3><a href="#">Çocuklarda flor uygulaması: ne zaman, ne sıklıkla?</a></h3>
-        <p>Koruyucu diş hekimliğinin araçlarından biri hakkında ebeveynlerin bilmesi gerekenler.</p>
-        <div class="post__author"><img src="assets/img/dr-4.jpg" alt="" width="28" height="28"><span>Uzm. Dt. Zeynep Demir · Çocuk Diş Hekimliği Uzmanı</span></div>
-      </article>
-    </div>
-    <p class="rail-hint">Kaydırarak keşfedin <svg width="14" height="14"><use href="#i-arrow"/></svg></p>
   </div>
 </section>
 
 <!-- ================= APPOINTMENT & CONTACT ================= -->
-<section class="section" id="iletisim" aria-labelledby="iletisim-title">
+<section class="sec" id="iletisim" aria-labelledby="iletisim-title">
   <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow eyebrow--plain">Randevu &amp; İletişim</span>
-      <h2 id="iletisim-title">Randevu talebinizi iletin.</h2>
-      <p>Formu doldurun; hasta danışmanımız mesai saatlerinde sizi arayarak randevunuzu teyit etsin.</p>
+    <div class="sec__head reveal">
+      <div><span class="eyebrow">Randevu &amp; İletişim</span><h2 id="iletisim-title">Randevu talebinizi iletin</h2><p>Formu doldurun; hasta danışmanımız mesai saatlerinde sizi arayarak randevunuzu teyit etsin.</p></div>
     </div>
     <div class="contact">
       <form class="form reveal" id="randevu" action="#" method="post" novalidate>
@@ -687,15 +692,25 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="#top"><img src="assets/img/brand/logo-horizontal-white.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302"></a>
-        <p>Ağız ve diş sağlığı alanında, ilgili uzmanlık dallarındaki hekimlerle hizmet veren özel poliklinik.</p>
-        <div class="footer__badges"><span class="chip chip--dark"><svg><use href="#i-shield"/></svg>Sağlık Bakanlığı Ruhsatlı</span><span class="chip chip--dark">TDB Üyesi Hekimler</span><span class="chip chip--dark">Uluslararası Sağlık Turizmi Yetki Belgesi</span></div>
-        <div class="social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a></div>
+      <div><h4>Tedaviler</h4><ul><li><a href="tedaviler/implant.html">Dental İmplant</a></li><li><a href="#">Gülüş Tasarımı</a></li><li><a href="#">Şeffaf Plak</a></li><li><a href="#">Çocuk Diş Hekimliği</a></li><li><a href="#">Kanal Tedavisi</a></li><li><a href="#">Ağız, Diş ve Çene Cerrahisi</a></li><li><a href="#">Protez Tedavileri</a></li><li><a href="#">Diş Eti Tedavileri</a></li></ul></div>
+      <div><h4>Kurumsal</h4><ul><li><a href="#hakkimizda">Hakkımızda</a></li><li><a href="#hekimler">Hekimlerimiz</a></li><li><a href="#klinik">Kliniğimiz</a></li><li><a href="#uluslararasi">Uluslararası Hastalar</a></li><li><a href="#">Kalite Politikası</a></li><li><a href="#">Kariyer</a></li><li><a href="#blog">Blog</a></li></ul></div>
+      <div><h4>Hasta Rehberi</h4><ul><li><a href="#sss">Sıkça Sorulan Sorular</a></li><li><a href="#bilgi">Tedavi Bilgilendirme Yazıları</a></li><li><a href="#">Hasta Hakları ve Sorumlulukları</a></li><li><a href="#">KVKK Aydınlatma Metni</a></li><li><a href="#">Açık Rıza Metni</a></li><li><a href="#">Çerez Politikası</a></li><li><a href="#iletisim">İletişim</a></li></ul></div>
+      <div><h4>İletişim</h4><ul class="footer__contact">
+        <li><a href="https://maps.google.com/?q=Kaya+Alp+Dis" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg><span>Örnek Cad. No:1, Kat 2<br>Çorlu / Tekirdağ</span></a></li>
+        <li><a href="tel:+902820000000"><svg><use href="#i-phone"/></svg><span class="tabular">0 (282) 000 00 00</span></a></li>
+        <li><a href="https://wa.me/905000000000" target="_blank" rel="noopener"><svg><use href="#i-whatsapp"/></svg><span class="tabular">0 (500) 000 00 00</span></a></li>
+        <li><a href="mailto:info@kayaalpdent.com"><svg><use href="#i-mail"/></svg><span>info@kayaalpdent.com</span></a></li>
+        <li><a href="#klinik"><svg><use href="#i-clock"/></svg><span>Pzt–Cum 09:00–19:00<br>Cmt 09:00–17:00</span></a></li>
+      </ul></div>
+    </div>
+    <div class="footer__brandrow">
+      <a href="#top"><img src="assets/img/brand/logo-horizontal-white.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302"></a>
+      <div class="footer__certs" aria-label="Ruhsat ve belgeler">
+        <div class="cert"><svg><use href="#i-shield"/></svg><strong>Sağlık Bakanlığı Ruhsatı</strong><small>Kurum Kodu: ••••••</small></div>
+        <div class="cert"><svg><use href="#i-globe"/></svg><strong>Uluslararası Sağlık Turizmi Yetki Belgesi</strong><small>No: ••••••</small></div>
+        <div class="cert"><svg><use href="#i-clipboard"/></svg><strong>Türk Diş Hekimleri Birliği</strong><small>Üye hekimler</small></div>
       </div>
-      <div><h4>Tedaviler</h4><ul><li><a href="tedaviler/implant.html">Dental İmplant</a></li><li><a href="#">Gülüş Tasarımı</a></li><li><a href="#">Şeffaf Plak</a></li><li><a href="#">Çocuk Diş Hekimliği</a></li><li><a href="#">Kanal Tedavisi</a></li><li><a href="#">Ağız, Diş ve Çene Cerrahisi</a></li><li><a href="#">Protez Tedavileri</a></li></ul></div>
-      <div><h4>Kurumsal</h4><ul><li><a href="#neden">Çalışma İlkelerimiz</a></li><li><a href="#hekimler">Hekimlerimiz</a></li><li><a href="#klinik">Kliniğimiz</a></li><li><a href="#">Kalite Politikası</a></li><li><a href="#">Kariyer</a></li><li><a href="#blog">Blog</a></li></ul></div>
-      <div><h4>Hasta Rehberi</h4><ul><li><a href="#sss">Sıkça Sorulan Sorular</a></li><li><a href="#">Hasta Hakları ve Sorumlulukları</a></li><li><a href="#">KVKK Aydınlatma Metni</a></li><li><a href="#">Açık Rıza Metni</a></li><li><a href="#">Çerez Politikası</a></li><li><a href="#iletisim">İletişim</a></li></ul></div>
+      <div class="social"><a href="#" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#" aria-label="YouTube"><svg><use href="#i-youtube"/></svg></a><a href="#" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a><a href="#" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a></div>
     </div>
     <div class="footer__legal">
       <p><strong>Yasal bilgilendirme.</strong> Bu web sitesindeki bilgiler yalnızca genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez, herhangi bir tedavi sonucu için vaat veya garanti içermez. Tedavi süreleri ve sonuçları kişiye göre farklılık gösterir. Sitede kullanılan kişi görselleri temsilidir; hasta görseli değildir. İçerikler, 29 Temmuz 2023 tarihli “Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik” hükümlerine uygun olarak hazırlanmıştır.</p>
@@ -721,6 +736,6 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <!-- @/shared:footer -->
 
-<script src="assets/js/main.js?v=3" defer></script>
+<script src="assets/js/main.js?v=6" defer></script>
 </body>
 </html>
