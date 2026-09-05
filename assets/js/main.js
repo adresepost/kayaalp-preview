@@ -85,7 +85,9 @@
     hero.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
     hero.addEventListener('touchend', (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) { show(dx < 0 ? i + 1 : i - 1); start(); } x0 = null; });
     hero.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight') { show(i + 1); start(); } if (e.key === 'ArrowLeft') { show(i - 1); start(); } });
-    show(0); start();
+    let initial = 0;
+    try { const q = parseInt(new URLSearchParams(location.search).get('slide'), 10); if (q >= 1 && q <= slides.length) initial = q - 1; } catch (e) { /* ignore */ }
+    hero.classList.add('is-instant'); show(initial); void hero.offsetWidth; hero.classList.remove('is-instant'); start();
   }
 
   /* ---------- scroll-snap carousels (arrows + dots) ---------- */
