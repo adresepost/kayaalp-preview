@@ -311,17 +311,18 @@ body.has-dark-hero:not(.is-scrolled) .burger { background: rgba(255,255,255,.16)
 .band-dark h2 { color: #fff; }
 .band-dark p { color: rgba(255,255,255,.78); }
 .band-dark .eyebrow { color: var(--cyan); }
-.intl__list { display: grid; gap: .7rem; margin-top: 1.2rem; }
-.intl__list li { display: flex; gap: .7rem; align-items: flex-start; color: rgba(255,255,255,.88); }
-.intl__list svg { width: 20px; height: 20px; color: var(--cyan); flex: none; margin-top: .15rem; }
-.intl__langs { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.1rem; }
-.intl__card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 1.6rem; display: grid; gap: .9rem; justify-items: start; }
-.intl__card h3 { color: #fff; font-size: 22px; }
-.intl__card p { font-size: 15px; }
-.intl__steps { display: grid; gap: .65rem; }
-.intl__steps li { display: grid; grid-template-columns: 28px 1fr; gap: .75rem; align-items: start; font-size: 15px; color: rgba(255,255,255,.88); }
-.intl__steps b { width: 28px; height: 28px; border-radius: 50%; background: var(--cyan); color: var(--navy-900); display: grid; place-items: center; font-size: 13px; font-weight: 500; }
-.intl__note { font-size: 12px; color: rgba(255,255,255,.5); }
+.band__list { display: grid; gap: .7rem; margin-top: 1.2rem; }
+.band__list li { display: flex; gap: .7rem; align-items: flex-start; color: rgba(255,255,255,.88); }
+.band__list svg { width: 20px; height: 20px; color: var(--cyan); flex: none; margin-top: .15rem; }
+.band__langs { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.1rem; }
+.band__card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 1.6rem; display: grid; gap: .9rem; justify-items: start; }
+.band__card h3 { color: #fff; font-size: 22px; }
+.band__card p { font-size: 15px; }
+.band__steps { display: grid; gap: .65rem; }
+.band__steps li { display: grid; grid-template-columns: 28px 1fr; gap: .75rem; align-items: start; font-size: 15px; color: rgba(255,255,255,.88); }
+.band__steps b { width: 28px; height: 28px; border-radius: 50%; background: var(--cyan); color: var(--navy-900); display: grid; place-items: center; font-size: 13px; font-weight: 500; }
+.band__note { font-size: 12px; color: rgba(255,255,255,.5); }
+.band__actions { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.3rem; }
 .band-navy { background: var(--navy); color: #fff; padding: 48px 0; }
 .band-navy__inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .band-navy h2 { color: #fff; font-size: 35px; max-width: 30ch; }
