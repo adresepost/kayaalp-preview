@@ -25,7 +25,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500..800&family=Quicksand:wght@400;500;600;700&display=swap">
-  <link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/img/hero-bg.webp" type="image/webp" media="(min-width: 721px)">
+  <link rel="preload" as="image" href="assets/img/hero-person.webp" type="image/webp">
   <link rel="stylesheet" href="assets/css/style.css?v=3">
   <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
   <script type="application/ld+json">
@@ -75,7 +76,7 @@
   }
   </script>
 </head>
-<body>
+<body class="has-dark-hero">
 <a class="skip-link" href="#icerik">İçeriğe geç</a>
 
 <!-- @shared:sprite -->
@@ -153,7 +154,8 @@
   <div class="navbar">
     <div class="container navbar__inner">
       <a class="logo" href="#top" aria-label="Kaya Alp Ağız ve Diş Sağlığı Polikliniği ana sayfa">
-        <img src="assets/img/brand/logo-horizontal.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302">
+        <img class="logo__dark" src="assets/img/brand/logo-horizontal.png" alt="Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği" width="1400" height="302">
+        <img class="logo__light" src="assets/img/brand/logo-horizontal-white.png" alt="" aria-hidden="true" width="1400" height="302">
       </a>
 
       <nav class="nav" aria-label="Ana menü">
@@ -283,7 +285,12 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero" aria-labelledby="hero-title">
-  <div class="hero__bg" aria-hidden="true"><span class="glow glow--a"></span><span class="glow glow--b"></span><span class="dots"></span></div>
+  <picture class="hero__bg" aria-hidden="true">
+    <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.webp" type="image/webp">
+    <source media="(max-width: 720px)" srcset="assets/img/hero-bg-mobile.jpg">
+    <source srcset="assets/img/hero-bg.webp" type="image/webp">
+    <img src="assets/img/hero-bg.jpg" alt="" width="2400" height="1200" fetchpriority="high">
+  </picture>
   <div class="container hero__inner">
     <div class="hero__content">
       <span class="eyebrow" data-hero="1"><svg><use href="#i-spark"/></svg>Özel Kaya Alp Ağız ve Diş Sağlığı Polikliniği</span>
@@ -301,21 +308,19 @@
     </div>
 
     <div class="hero__stage" data-hero="v">
-      <span class="hero__frame" aria-hidden="true"></span>
-      <figure class="hero__img">
-        <picture>
-          <source srcset="assets/img/hero.webp" type="image/webp">
-          <img src="assets/img/hero.jpg" alt="Kliniğimizde gülümseyen bir hasta" width="1120" height="1400" fetchpriority="high">
-        </picture>
-      </figure>
+      <span class="hero__halo" aria-hidden="true"></span>
       <svg class="hero__swoosh" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <path class="arc" d="M-4 66C22 104 74 100 104 30"/>
+        <path class="arc" d="M-6 72C20 108 74 104 106 26"/>
         <g class="mover" opacity="0">
           <path d="M0-4.5c.3 2.7 1 3.4 4.4 4.3C1 .7.3 1.4 0 4.5-.3 1.4-1 .7-4.4-.2-1-1.1-.3-1.8 0-4.5z"/>
-          <animateMotion dur="2.1s" begin="0.6s" fill="freeze" calcMode="spline" keySplines=".4 0 .2 1" keyTimes="0;1" path="M-4 66C22 104 74 100 104 30"/>
+          <animateMotion dur="2.1s" begin="0.6s" fill="freeze" calcMode="spline" keySplines=".4 0 .2 1" keyTimes="0;1" path="M-6 72C20 108 74 104 106 26"/>
           <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.08;.85;1" dur="2.4s" begin="0.6s" fill="freeze"/>
         </g>
       </svg>
+      <picture>
+        <source srcset="assets/img/hero-person.webp" type="image/webp">
+        <img class="hero__person" src="assets/img/hero-person.png" alt="Kliniğimizde gülümseyen bir hasta" width="1519" height="1300" fetchpriority="high">
+      </picture>
       <svg class="hero__spark" aria-hidden="true"><use href="#i-spark"/></svg>
       <svg class="hero__spark hero__spark--sm" aria-hidden="true"><use href="#i-spark"/></svg>
       <div class="float-card float-card--1" data-hero="f">
@@ -329,15 +334,10 @@
       <div class="hero__badge" data-hero="b"><svg><use href="#i-clipboard"/></svg><div><strong>Bilgilendirilmiş onam</strong><small>her tedavi öncesinde</small></div></div>
     </div>
   </div>
-</section>
-
-<!-- ================= TICKER ================= -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker__track">
-    <span class="ticker__item"><svg><use href="#i-spark"/></svg>3D Dental Tomografi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız İçi Tarayıcı</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Klinik İçi CAD/CAM</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sınıf B Otoklav Sterilizasyon</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Dijital Anestezi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sedasyon Ünitesi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span>
-    <span class="ticker__item"><svg><use href="#i-spark"/></svg>3D Dental Tomografi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız İçi Tarayıcı</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Klinik İçi CAD/CAM</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sınıf B Otoklav Sterilizasyon</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Dijital Anestezi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sedasyon Ünitesi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span>
+  <div class="hero__ticker" aria-hidden="true">
+    <div class="ticker__track"><span class="ticker__item"><svg><use href="#i-spark"/></svg>3D Dental Tomografi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız İçi Tarayıcı</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Klinik İçi CAD/CAM</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sınıf B Otoklav Sterilizasyon</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Dijital Anestezi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sedasyon Ünitesi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>3D Dental Tomografi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Ağız İçi Tarayıcı</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Klinik İçi CAD/CAM</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sınıf B Otoklav Sterilizasyon</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Dijital Anestezi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Sedasyon Ünitesi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Şeffaf Plak</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>İmplant Cerrahisi</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>Çocuk Diş Hekimliği</span><span class="ticker__item"><svg><use href="#i-spark"/></svg>TR · EN · DE · AR Hasta Koordinasyonu</span></div>
   </div>
-</div>
+</section>
 
 <!-- ================= TREATMENTS ================= -->
 <section class="section" id="tedaviler" aria-labelledby="tedaviler-title">
